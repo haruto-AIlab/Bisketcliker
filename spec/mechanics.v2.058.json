@@ -1,0 +1,189 @@
+{
+  "targetVersion": "2.058",
+  "evidence": "pinned-source-mirror",
+  "commit": "c77f00c51854a667da35a3135120797a579c2d72",
+  "rules": [
+    {
+      "id": "purchase",
+      "scope": "implemented",
+      "baseGrowth": 1.15,
+      "next": "ceil(base * growth ^ max(0, owned - free) * orderedDiscounts)",
+      "quote": "ceil(sum(unrounded prices) * orderedDiscounts)",
+      "payment": "sum(ceil(each modified price)); stop when unaffordable",
+      "sale": "floor(current next purchase price * .25), then decrement owned",
+      "source": {
+        "file": "main.js",
+        "line": 8089,
+        "endLine": 8180
+      }
+    },
+    {
+      "id": "cursor",
+      "scope": "implemented-core-only",
+      "formula": "base * 2 ^ initialDoubles + (nonCursorCount * fingerAddition)",
+      "fingerBase": 0.1,
+      "fingerMultipliers": [
+        5,
+        10,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "unshackledExtra": 25,
+      "unshackledStatus": "not-implemented",
+      "source": {
+        "file": "main.js",
+        "line": 8979,
+        "endLine": 9019
+      }
+    },
+    {
+      "id": "lucky",
+      "scope": "formula-only",
+      "formula": "gainMultiplier * min(bank * .15, cps * 900) + 13",
+      "source": {
+        "file": "main.js",
+        "line": 5787,
+        "endLine": 5793
+      }
+    },
+    {
+      "id": "golden-spawn",
+      "scope": "formula-only",
+      "fps": 30,
+      "baseMinSeconds": 300,
+      "baseMaxSeconds": 900,
+      "hazard": "max(0,(frame-minFrame)/(maxFrame-minFrame)) ^ 5",
+      "comparison": "random < hazard",
+      "effectSelection": null,
+      "randomCallOrder": null,
+      "source": {
+        "file": "main.js",
+        "line": 5494,
+        "endLine": 5510
+      }
+    },
+    {
+      "id": "drop",
+      "scope": "formula-only",
+      "successProbability": "1 - failureRate ^ dropRateMultiplier",
+      "warning": "Event-specific failure modifiers and duplicate rerolls still require separate review. Do not apply universally.",
+      "source": {
+        "file": "main.js",
+        "line": 10735,
+        "endLine": 10756
+      }
+    },
+    {
+      "id": "century",
+      "scope": "formula-only",
+      "secondsQuantum": 10,
+      "dayCap": 100,
+      "bonusCap": 0.1,
+      "formula": "1 + (1 - (1 - clamp(quantizedDays,0,100) / 100)^3) * .1",
+      "source": {
+        "file": "main.js",
+        "line": 5305,
+        "endLine": 5312
+      }
+    },
+    {
+      "id": "milk",
+      "scope": "formula-only",
+      "perNormalAchievement": 0.04,
+      "formula": "product(1 + milk * individualCoefficient * milkBoost)",
+      "coefficientOrder": [
+        0.1,
+        0.125,
+        0.15,
+        0.175,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.2,
+        0.175,
+        0.15,
+        0.125,
+        0.115,
+        0.11,
+        0.105,
+        0.1,
+        0.05
+      ],
+      "source": {
+        "file": "main.js",
+        "line": 5239,
+        "endLine": 5272
+      }
+    },
+    {
+      "id": "offline",
+      "scope": "baseline-only",
+      "baseUnlocked": false,
+      "baseGateOptimalSeconds": 3600,
+      "baseGatePercent": 5,
+      "excessTimeFactor": 0.1,
+      "upgrades": null,
+      "formula": "(min(elapsed,optimalSeconds) + max(0,elapsed-optimalSeconds)*.1) * unbuffedCps * percent/100",
+      "source": {
+        "file": "main.js",
+        "line": 3537,
+        "endLine": 3593
+      }
+    },
+    {
+      "id": "sugar-caps",
+      "scope": "formula-only",
+      "bakingCap": 100,
+      "bakingPerLump": 0.01,
+      "agingAttendantCap": 600,
+      "agingReductionMsEach": 6000,
+      "typeProbabilities": null,
+      "source": [
+        {
+          "file": "main.js",
+          "line": 4639,
+          "endLine": 4639
+        },
+        {
+          "file": "main.js",
+          "line": 5316,
+          "endLine": 5316
+        }
+      ]
+    },
+    {
+      "id": "gloves",
+      "scope": "formula-only",
+      "baseLevelCap": 10,
+      "extendedLevelCap": 20,
+      "perLevel": 0.05,
+      "source": {
+        "file": "main.js",
+        "line": 4939,
+        "endLine": 4942
+      }
+    },
+    {
+      "id": "prestige",
+      "scope": "formula-only",
+      "factor": 3,
+      "scale": 1000000000000.0,
+      "formula": "floor(pow(totalBaked/1e12,1/3))",
+      "numericModel": "JavaScript Number; retain Math.pow rounding behavior",
+      "resetRules": null,
+      "source": {
+        "file": "main.js",
+        "line": 4185,
+        "endLine": 4196
+      }
+    }
+  ]
+}

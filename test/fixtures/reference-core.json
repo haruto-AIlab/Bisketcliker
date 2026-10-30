@@ -1,0 +1,2880 @@
+{
+  "commit": "c77f00c51854a667da35a3135120797a579c2d72",
+  "sha256": "10068dd439fc07f6f582db24ed8d9407866a7550409fd15efcd511f1893d8442",
+  "method": "selected functions from pinned source mirror; not a live-game comparison",
+  "buildings": [
+    {
+      "id": 0,
+      "baseCost": 15,
+      "baseCps": 0.1
+    },
+    {
+      "id": 1,
+      "baseCost": 100,
+      "baseCps": 1
+    },
+    {
+      "id": 2,
+      "baseCost": 1100,
+      "baseCps": 8
+    },
+    {
+      "id": 3,
+      "baseCost": 12000,
+      "baseCps": 47
+    },
+    {
+      "id": 4,
+      "baseCost": 130000,
+      "baseCps": 260
+    },
+    {
+      "id": 5,
+      "baseCost": 1400000,
+      "baseCps": 1400
+    },
+    {
+      "id": 6,
+      "baseCost": 20000000,
+      "baseCps": 7800
+    },
+    {
+      "id": 7,
+      "baseCost": 330000000,
+      "baseCps": 44000
+    },
+    {
+      "id": 8,
+      "baseCost": 5100000000,
+      "baseCps": 260000
+    },
+    {
+      "id": 9,
+      "baseCost": 75000000000,
+      "baseCps": 1600000
+    },
+    {
+      "id": 10,
+      "baseCost": 1000000000000,
+      "baseCps": 10000000
+    },
+    {
+      "id": 11,
+      "baseCost": 14000000000000,
+      "baseCps": 65000000
+    },
+    {
+      "id": 12,
+      "baseCost": 170000000000000,
+      "baseCps": 430000000
+    },
+    {
+      "id": 13,
+      "baseCost": 2100000000000000,
+      "baseCps": 2900000000
+    },
+    {
+      "id": 14,
+      "baseCost": 26000000000000000,
+      "baseCps": 21000000000
+    },
+    {
+      "id": 15,
+      "baseCost": 310000000000000000,
+      "baseCps": 150000000000
+    },
+    {
+      "id": 16,
+      "baseCost": 71000000000000000000,
+      "baseCps": 1100000000000
+    },
+    {
+      "id": 17,
+      "baseCost": 1.2e+22,
+      "baseCps": 8300000000000
+    },
+    {
+      "id": 18,
+      "baseCost": 1.9000000000000003e+24,
+      "baseCps": 64000000000000
+    },
+    {
+      "id": 19,
+      "baseCost": 5.4e+26,
+      "baseCps": 510000000000000
+    }
+  ],
+  "prices": [
+    {
+      "building": 0,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 15,
+      "paid": 15
+    },
+    {
+      "building": 0,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 305,
+      "paid": 308
+    },
+    {
+      "building": 0,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 117431246,
+      "paid": 117431291
+    },
+    {
+      "building": 0,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 18,
+      "paid": 18
+    },
+    {
+      "building": 0,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 351,
+      "paid": 354
+    },
+    {
+      "building": 0,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 135045932,
+      "paid": 135045978
+    },
+    {
+      "building": 0,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 31,
+      "paid": 31
+    },
+    {
+      "building": 0,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 613,
+      "paid": 617
+    },
+    {
+      "building": 0,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 236196179,
+      "paid": 236196226
+    },
+    {
+      "building": 0,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 494,
+      "paid": 494
+    },
+    {
+      "building": 0,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 10026,
+      "paid": 10031
+    },
+    {
+      "building": 0,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 3865713593,
+      "paid": 3865713638
+    },
+    {
+      "building": 0,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 17614702,
+      "paid": 17614702
+    },
+    {
+      "building": 0,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 357643942,
+      "paid": 357643946
+    },
+    {
+      "building": 0,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 137901090618215,
+      "paid": 137901090618261
+    },
+    {
+      "building": 0,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 3.9336477868514015e+37,
+      "paid": 3.9336477868514015e+37
+    },
+    {
+      "building": 0,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 7.986767631197053e+38,
+      "paid": 7.986767631197053e+38
+    },
+    {
+      "building": 0,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 3.079554381846135e+44,
+      "paid": 3.079554381846135e+44
+    },
+    {
+      "building": 1,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 100,
+      "paid": 100
+    },
+    {
+      "building": 1,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 2031,
+      "paid": 2035
+    },
+    {
+      "building": 1,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 782874968,
+      "paid": 782875017
+    },
+    {
+      "building": 1,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 115,
+      "paid": 115
+    },
+    {
+      "building": 1,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 2335,
+      "paid": 2340
+    },
+    {
+      "building": 1,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 900306213,
+      "paid": 900306263
+    },
+    {
+      "building": 1,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 202,
+      "paid": 202
+    },
+    {
+      "building": 1,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 4084,
+      "paid": 4090
+    },
+    {
+      "building": 1,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 1574641193,
+      "paid": 1574641242
+    },
+    {
+      "building": 1,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 3292,
+      "paid": 3292
+    },
+    {
+      "building": 1,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 66838,
+      "paid": 66842
+    },
+    {
+      "building": 1,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 25771423951,
+      "paid": 25771423998
+    },
+    {
+      "building": 1,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 117431346,
+      "paid": 117431346
+    },
+    {
+      "building": 1,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 2384292943,
+      "paid": 2384292946
+    },
+    {
+      "building": 1,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 919340604121432,
+      "paid": 919340604121484
+    },
+    {
+      "building": 1,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 2.6224318579009344e+38,
+      "paid": 2.6224318579009344e+38
+    },
+    {
+      "building": 1,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 5.3245117541313694e+39,
+      "paid": 5.3245117541313694e+39
+    },
+    {
+      "building": 1,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 2.0530362545640904e+45,
+      "paid": 2.0530362545640904e+45
+    },
+    {
+      "building": 2,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 1100,
+      "paid": 1100
+    },
+    {
+      "building": 2,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 22335,
+      "paid": 22337
+    },
+    {
+      "building": 2,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 8611624639,
+      "paid": 8611624689
+    },
+    {
+      "building": 2,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 1265,
+      "paid": 1265
+    },
+    {
+      "building": 2,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 25685,
+      "paid": 25688
+    },
+    {
+      "building": 2,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 9903368335,
+      "paid": 9903368385
+    },
+    {
+      "building": 2,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 2213,
+      "paid": 2213
+    },
+    {
+      "building": 2,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 44922,
+      "paid": 44928
+    },
+    {
+      "building": 2,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 17321053113,
+      "paid": 17321053166
+    },
+    {
+      "building": 2,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 36211,
+      "paid": 36211
+    },
+    {
+      "building": 2,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 735215,
+      "paid": 735218
+    },
+    {
+      "building": 2,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 283485663454,
+      "paid": 283485663507
+    },
+    {
+      "building": 2,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 1291744796,
+      "paid": 1291744796
+    },
+    {
+      "building": 2,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 26227222369,
+      "paid": 26227222375
+    },
+    {
+      "building": 2,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 10112746645335748,
+      "paid": 10112746645335800
+    },
+    {
+      "building": 2,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 2.884675043691028e+39,
+      "paid": 2.884675043691028e+39
+    },
+    {
+      "building": 2,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 5.856962929544506e+40,
+      "paid": 5.856962929544506e+40
+    },
+    {
+      "building": 2,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 2.258339880020499e+46,
+      "paid": 2.258339880020499e+46
+    },
+    {
+      "building": 3,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 12000,
+      "paid": 12000
+    },
+    {
+      "building": 3,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 243645,
+      "paid": 243649
+    },
+    {
+      "building": 3,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 93944996057,
+      "paid": 93944996104
+    },
+    {
+      "building": 3,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 13800,
+      "paid": 13800
+    },
+    {
+      "building": 3,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 280192,
+      "paid": 280196
+    },
+    {
+      "building": 3,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 108036745465,
+      "paid": 108036745513
+    },
+    {
+      "building": 3,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 24137,
+      "paid": 24137
+    },
+    {
+      "building": 3,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 490057,
+      "paid": 490062
+    },
+    {
+      "building": 3,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 188956943047,
+      "paid": 188956943096
+    },
+    {
+      "building": 3,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 395028,
+      "paid": 395028
+    },
+    {
+      "building": 3,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 8020526,
+      "paid": 8020530
+    },
+    {
+      "building": 3,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 3092570874035,
+      "paid": 3092570874082
+    },
+    {
+      "building": 3,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 14091761409,
+      "paid": 14091761409
+    },
+    {
+      "building": 3,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 286115153115,
+      "paid": 286115153120
+    },
+    {
+      "building": 3,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 110320872494571790,
+      "paid": 110320872494571860
+    },
+    {
+      "building": 3,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 3.1469182294811213e+40,
+      "paid": 3.1469182294811213e+40
+    },
+    {
+      "building": 3,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 6.389414104957642e+41,
+      "paid": 6.389414104957642e+41
+    },
+    {
+      "building": 3,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 2.4636435054769077e+47,
+      "paid": 2.4636435054769077e+47
+    },
+    {
+      "building": 4,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 130000,
+      "paid": 130000
+    },
+    {
+      "building": 4,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 2639484,
+      "paid": 2639485
+    },
+    {
+      "building": 4,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 1017737457274,
+      "paid": 1017737457316
+    },
+    {
+      "building": 4,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 149500,
+      "paid": 149500
+    },
+    {
+      "building": 4,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 3035406,
+      "paid": 3035408
+    },
+    {
+      "building": 4,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 1170398075865,
+      "paid": 1170398075908
+    },
+    {
+      "building": 4,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 261477,
+      "paid": 261477
+    },
+    {
+      "building": 4,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 5308944,
+      "paid": 5308947
+    },
+    {
+      "building": 4,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 2047033549676,
+      "paid": 2047033549720
+    },
+    {
+      "building": 4,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 4279464,
+      "paid": 4279464
+    },
+    {
+      "building": 4,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 86889029,
+      "paid": 86889032
+    },
+    {
+      "building": 4,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 33502851135375,
+      "paid": 33502851135421
+    },
+    {
+      "building": 4,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 152660748592,
+      "paid": 152660748592
+    },
+    {
+      "building": 4,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 3099580825403,
+      "paid": 3099580825408
+    },
+    {
+      "building": 4,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 1195142785357861400,
+      "paid": 1195142785357861400
+    },
+    {
+      "building": 4,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 3.4091614152712146e+41,
+      "paid": 3.4091614152712146e+41
+    },
+    {
+      "building": 4,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 6.92186528037078e+42,
+      "paid": 6.92186528037078e+42
+    },
+    {
+      "building": 4,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 2.6689471309333172e+48,
+      "paid": 2.6689471309333172e+48
+    },
+    {
+      "building": 5,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 1400000,
+      "paid": 1400000
+    },
+    {
+      "building": 5,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 28425206,
+      "paid": 28425209
+    },
+    {
+      "building": 5,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 10960249539870,
+      "paid": 10960249539916
+    },
+    {
+      "building": 5,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 1610000,
+      "paid": 1610000
+    },
+    {
+      "building": 5,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 32688987,
+      "paid": 32688990
+    },
+    {
+      "building": 5,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 12604286970850,
+      "paid": 12604286970897
+    },
+    {
+      "building": 5,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 2815901,
+      "paid": 2815901
+    },
+    {
+      "building": 5,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 57173242,
+      "paid": 57173247
+    },
+    {
+      "building": 5,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 22044976688810,
+      "paid": 22044976688859
+    },
+    {
+      "building": 5,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 46086534,
+      "paid": 46086534
+    },
+    {
+      "building": 5,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 935727995,
+      "paid": 935727998
+    },
+    {
+      "building": 5,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 360799935304028,
+      "paid": 360799935304074
+    },
+    {
+      "building": 5,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 1644038830981,
+      "paid": 1644038830981
+    },
+    {
+      "building": 5,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 33380101196644,
+      "paid": 33380101196649
+    },
+    {
+      "building": 5,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 12870768457700043000,
+      "paid": 12870768457700043000
+    },
+    {
+      "building": 5,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 3.671404601061308e+42,
+      "paid": 3.671404601061308e+42
+    },
+    {
+      "building": 5,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 7.454316455783918e+43,
+      "paid": 7.454316455783918e+43
+    },
+    {
+      "building": 5,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 2.874250756389726e+49,
+      "paid": 2.874250756389726e+49
+    },
+    {
+      "building": 6,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 20000000,
+      "paid": 20000000
+    },
+    {
+      "building": 6,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 406074365,
+      "paid": 406074367
+    },
+    {
+      "building": 6,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 156574993426704,
+      "paid": 156574993426755
+    },
+    {
+      "building": 6,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 23000000,
+      "paid": 23000000
+    },
+    {
+      "building": 6,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 466985520,
+      "paid": 466985522
+    },
+    {
+      "building": 6,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 180061242440710,
+      "paid": 180061242440761
+    },
+    {
+      "building": 6,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 40227144,
+      "paid": 40227144
+    },
+    {
+      "building": 6,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 816760593,
+      "paid": 816760597
+    },
+    {
+      "building": 6,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 314928238411567,
+      "paid": 314928238411620
+    },
+    {
+      "building": 6,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 658379053,
+      "paid": 658379053
+    },
+    {
+      "building": 6,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 13367542774,
+      "paid": 13367542780
+    },
+    {
+      "building": 6,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 5154284790057539,
+      "paid": 5154284790057594
+    },
+    {
+      "building": 6,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 23486269014006,
+      "paid": 23486269014006
+    },
+    {
+      "building": 6,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 476858588523478,
+      "paid": 476858588523483
+    },
+    {
+      "building": 6,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 183868120824286350000,
+      "paid": 183868120824286350000
+    },
+    {
+      "building": 6,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 5.244863715801868e+43,
+      "paid": 5.244863715801868e+43
+    },
+    {
+      "building": 6,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 1.0649023508262738e+45,
+      "paid": 1.0649023508262738e+45
+    },
+    {
+      "building": 6,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 4.10607250912818e+50,
+      "paid": 4.10607250912818e+50
+    },
+    {
+      "building": 7,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 330000000,
+      "paid": 330000000
+    },
+    {
+      "building": 7,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 6700227019,
+      "paid": 6700227021
+    },
+    {
+      "building": 7,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 2583487391540616,
+      "paid": 2583487391540663
+    },
+    {
+      "building": 7,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 379500000,
+      "paid": 379500000
+    },
+    {
+      "building": 7,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 7705261072,
+      "paid": 7705261074
+    },
+    {
+      "building": 7,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 2971010500271708,
+      "paid": 2971010500271756
+    },
+    {
+      "building": 7,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 663747872,
+      "paid": 663747872
+    },
+    {
+      "building": 7,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 13476549772,
+      "paid": 13476549776
+    },
+    {
+      "building": 7,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 5196315933790843,
+      "paid": 5196315933790892
+    },
+    {
+      "building": 7,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 10863254365,
+      "paid": 10863254365
+    },
+    {
+      "building": 7,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 220564455766,
+      "paid": 220564455771
+    },
+    {
+      "building": 7,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 85045699035949390,
+      "paid": 85045699035949440
+    },
+    {
+      "building": 7,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 387523438731093,
+      "paid": 387523438731093
+    },
+    {
+      "building": 7,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 7868166710637385,
+      "paid": 7868166710637389
+    },
+    {
+      "building": 7,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 3.0338239936007247e+21,
+      "paid": 3.0338239936007247e+21
+    },
+    {
+      "building": 7,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 8.654025131073083e+44,
+      "paid": 8.654025131073083e+44
+    },
+    {
+      "building": 7,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 1.757088878863352e+46,
+      "paid": 1.757088878863352e+46
+    },
+    {
+      "building": 7,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 6.775019640061497e+51,
+      "paid": 6.775019640061497e+51
+    },
+    {
+      "building": 8,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 5100000000,
+      "paid": 5100000000
+    },
+    {
+      "building": 8,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 103548963015,
+      "paid": 103548963016
+    },
+    {
+      "building": 8,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 39926623323809520,
+      "paid": 39926623323809560
+    },
+    {
+      "building": 8,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 5865000000,
+      "paid": 5865000000
+    },
+    {
+      "building": 8,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 119081307467,
+      "paid": 119081307469
+    },
+    {
+      "building": 8,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 45915616822380940,
+      "paid": 45915616822380984
+    },
+    {
+      "building": 8,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 10257921657,
+      "paid": 10257921657
+    },
+    {
+      "building": 8,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 208273951017,
+      "paid": 208273951020
+    },
+    {
+      "building": 8,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 80306700794949390,
+      "paid": 80306700794949420
+    },
+    {
+      "building": 8,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 167886658361,
+      "paid": 167886658361
+    },
+    {
+      "building": 8,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 3408723407289,
+      "paid": 3408723407293
+    },
+    {
+      "building": 8,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 1314342621464672500,
+      "paid": 1314342621464672500
+    },
+    {
+      "building": 8,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 5988998598571425,
+      "paid": 5988998598571425
+    },
+    {
+      "building": 8,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 121598940073486850,
+      "paid": 121598940073486850
+    },
+    {
+      "building": 8,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 4.688637081019302e+22,
+      "paid": 4.688637081019302e+22
+    },
+    {
+      "building": 8,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 1.3374402475294766e+46,
+      "paid": 1.3374402475294766e+46
+    },
+    {
+      "building": 8,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 2.7155009946069983e+47,
+      "paid": 2.7155009946069983e+47
+    },
+    {
+      "building": 8,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 1.047048489827686e+53,
+      "paid": 1.047048489827686e+53
+    },
+    {
+      "building": 9,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 75000000000,
+      "paid": 75000000000
+    },
+    {
+      "building": 9,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 1522778867854,
+      "paid": 1522778867856
+    },
+    {
+      "building": 9,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 587156225350140200,
+      "paid": 587156225350140200
+    },
+    {
+      "building": 9,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 86250000000,
+      "paid": 86250000000
+    },
+    {
+      "building": 9,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 1751195698033,
+      "paid": 1751195698035
+    },
+    {
+      "building": 9,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 675229659152661100,
+      "paid": 675229659152661100
+    },
+    {
+      "building": 9,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 150851789063,
+      "paid": 150851789063
+    },
+    {
+      "building": 9,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 3062852220832,
+      "paid": 3062852220836
+    },
+    {
+      "building": 9,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 1180980894043373600,
+      "paid": 1180980894043373600
+    },
+    {
+      "building": 9,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 2468921446485,
+      "paid": 2468921446485
+    },
+    {
+      "building": 9,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 50128285401302,
+      "paid": 50128285401305
+    },
+    {
+      "building": 9,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 19328567962715770000,
+      "paid": 19328567962715770000
+    },
+    {
+      "building": 9,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 88073508802520940,
+      "paid": 88073508802520940
+    },
+    {
+      "building": 9,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 1788219706963041800,
+      "paid": 1788219706963041800
+    },
+    {
+      "building": 9,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 6.895054530910738e+23,
+      "paid": 6.895054530910738e+23
+    },
+    {
+      "building": 9,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 1.966823893425701e+47,
+      "paid": 1.966823893425701e+47
+    },
+    {
+      "building": 9,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 3.993383815598527e+48,
+      "paid": 3.993383815598527e+48
+    },
+    {
+      "building": 9,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 1.5397771909230676e+54,
+      "paid": 1.5397771909230676e+54
+    },
+    {
+      "building": 10,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 1000000000000,
+      "paid": 1000000000000
+    },
+    {
+      "building": 10,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 20303718238053,
+      "paid": 20303718238054
+    },
+    {
+      "building": 10,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 7828749671335201000,
+      "paid": 7828749671335201000
+    },
+    {
+      "building": 10,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 1150000000000,
+      "paid": 1150000000000
+    },
+    {
+      "building": 10,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 23349275973761,
+      "paid": 23349275973762
+    },
+    {
+      "building": 10,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 9003062122035481000,
+      "paid": 9003062122035481000
+    },
+    {
+      "building": 10,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 2011357187500,
+      "paid": 2011357187500
+    },
+    {
+      "building": 10,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 40838029611083,
+      "paid": 40838029611085
+    },
+    {
+      "building": 10,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 15746411920578314000,
+      "paid": 15746411920578314000
+    },
+    {
+      "building": 10,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 32918952619790,
+      "paid": 32918952619790
+    },
+    {
+      "building": 10,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 668377138684016,
+      "paid": 668377138684020
+    },
+    {
+      "building": 10,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 257714239502876970000,
+      "paid": 257714239502876970000
+    },
+    {
+      "building": 10,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 1174313450700279300,
+      "paid": 1174313450700279300
+    },
+    {
+      "building": 10,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 23842929426173895000,
+      "paid": 23842929426173895000
+    },
+    {
+      "building": 10,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 9.193406041214318e+24,
+      "paid": 9.193406041214318e+24
+    },
+    {
+      "building": 10,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 2.6224318579009342e+48,
+      "paid": 2.6224318579009342e+48
+    },
+    {
+      "building": 10,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 5.324511754131369e+49,
+      "paid": 5.324511754131369e+49
+    },
+    {
+      "building": 10,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 2.05303625456409e+55,
+      "paid": 2.05303625456409e+55
+    },
+    {
+      "building": 11,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 14000000000000,
+      "paid": 14000000000000
+    },
+    {
+      "building": 11,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 284252055332739,
+      "paid": 284252055332739
+    },
+    {
+      "building": 11,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 109602495398692800000,
+      "paid": 109602495398692800000
+    },
+    {
+      "building": 11,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 16100000000000,
+      "paid": 16100000000000
+    },
+    {
+      "building": 11,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 326889863632649,
+      "paid": 326889863632650
+    },
+    {
+      "building": 11,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 126042869708496720000,
+      "paid": 126042869708496720000
+    },
+    {
+      "building": 11,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 28159000625000,
+      "paid": 28159000625000
+    },
+    {
+      "building": 11,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 571732414555151,
+      "paid": 571732414555153
+    },
+    {
+      "building": 11,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 220449766888096330000,
+      "paid": 220449766888096330000
+    },
+    {
+      "building": 11,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 460865336677055,
+      "paid": 460865336677055
+    },
+    {
+      "building": 11,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 9357279941576222,
+      "paid": 9357279941576228
+    },
+    {
+      "building": 11,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 3.6079993530402776e+21,
+      "paid": 3.6079993530402776e+21
+    },
+    {
+      "building": 11,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 16440388309803911000,
+      "paid": 16440388309803911000
+    },
+    {
+      "building": 11,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 333801011966434500000,
+      "paid": 333801011966434500000
+    },
+    {
+      "building": 11,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 1.2870768457700045e+26,
+      "paid": 1.2870768457700045e+26
+    },
+    {
+      "building": 11,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 3.671404601061308e+49,
+      "paid": 3.671404601061308e+49
+    },
+    {
+      "building": 11,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 7.454316455783917e+50,
+      "paid": 7.454316455783917e+50
+    },
+    {
+      "building": 11,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 2.874250756389726e+56,
+      "paid": 2.874250756389726e+56
+    },
+    {
+      "building": 12,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 170000000000000,
+      "paid": 170000000000000
+    },
+    {
+      "building": 12,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 3451632100468964,
+      "paid": 3451632100468966
+    },
+    {
+      "building": 12,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 1.330887444126984e+21,
+      "paid": 1.330887444126984e+21
+    },
+    {
+      "building": 12,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 195500000000000,
+      "paid": 195500000000000
+    },
+    {
+      "building": 12,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 3969376915539308,
+      "paid": 3969376915539311
+    },
+    {
+      "building": 12,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 1.5305205607460315e+21,
+      "paid": 1.5305205607460315e+21
+    },
+    {
+      "building": 12,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 341930721875000,
+      "paid": 341930721875000
+    },
+    {
+      "building": 12,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 6942465033883968,
+      "paid": 6942465033883973
+    },
+    {
+      "building": 12,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 2.676890026498313e+21,
+      "paid": 2.676890026498313e+21
+    },
+    {
+      "building": 12,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 5596221945364234,
+      "paid": 5596221945364234
+    },
+    {
+      "building": 12,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 113624113576282720,
+      "paid": 113624113576282720
+    },
+    {
+      "building": 12,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 4.381142071548909e+22,
+      "paid": 4.381142071548909e+22
+    },
+    {
+      "building": 12,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 199633286619047500000,
+      "paid": 199633286619047500000
+    },
+    {
+      "building": 12,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 4.053298002449562e+21,
+      "paid": 4.053298002449562e+21
+    },
+    {
+      "building": 12,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 1.5628790270064338e+27,
+      "paid": 1.5628790270064338e+27
+    },
+    {
+      "building": 12,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 4.4581341584315884e+50,
+      "paid": 4.4581341584315884e+50
+    },
+    {
+      "building": 12,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 9.051669982023328e+51,
+      "paid": 9.051669982023328e+51
+    },
+    {
+      "building": 12,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 3.4901616327589534e+57,
+      "paid": 3.4901616327589534e+57
+    },
+    {
+      "building": 13,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 2100000000000000,
+      "paid": 2100000000000000
+    },
+    {
+      "building": 13,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 42637808299910730,
+      "paid": 42637808299910730
+    },
+    {
+      "building": 13,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 1.6440374309803918e+22,
+      "paid": 1.6440374309803918e+22
+    },
+    {
+      "building": 13,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 2415000000000000,
+      "paid": 2415000000000000
+    },
+    {
+      "building": 13,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 49033479544897330,
+      "paid": 49033479544897330
+    },
+    {
+      "building": 13,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 1.8906430456274507e+22,
+      "paid": 1.8906430456274507e+22
+    },
+    {
+      "building": 13,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 4223850093749999,
+      "paid": 4223850093749999
+    },
+    {
+      "building": 13,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 85759862183272540,
+      "paid": 85759862183272540
+    },
+    {
+      "building": 13,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 3.3067465033214453e+22,
+      "paid": 3.3067465033214453e+22
+    },
+    {
+      "building": 13,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 69129800501558190,
+      "paid": 69129800501558190
+    },
+    {
+      "building": 13,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 1403591991236433700,
+      "paid": 1403591991236433700
+    },
+    {
+      "building": 13,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 5.411999029560416e+23,
+      "paid": 5.411999029560416e+23
+    },
+    {
+      "building": 13,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 2.4660582464705863e+21,
+      "paid": 2.4660582464705863e+21
+    },
+    {
+      "building": 13,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 5.0070151794965174e+22,
+      "paid": 5.0070151794965174e+22
+    },
+    {
+      "building": 13,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 1.9306152686550066e+28,
+      "paid": 1.9306152686550066e+28
+    },
+    {
+      "building": 13,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 5.507106901591962e+51,
+      "paid": 5.507106901591962e+51
+    },
+    {
+      "building": 13,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 1.1181474683675877e+53,
+      "paid": 1.1181474683675877e+53
+    },
+    {
+      "building": 13,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 4.3113761345845887e+58,
+      "paid": 4.3113761345845887e+58
+    },
+    {
+      "building": 14,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 26000000000000000,
+      "paid": 26000000000000000
+    },
+    {
+      "building": 14,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 527896674189370940,
+      "paid": 527896674189370940
+    },
+    {
+      "building": 14,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 2.035474914547152e+23,
+      "paid": 2.035474914547152e+23
+    },
+    {
+      "building": 14,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 29899999999999996,
+      "paid": 29899999999999996
+    },
+    {
+      "building": 14,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 607081175317776400,
+      "paid": 607081175317776400
+    },
+    {
+      "building": 14,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 2.3407961517292245e+23,
+      "paid": 2.3407961517292245e+23
+    },
+    {
+      "building": 14,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 52295286874999980,
+      "paid": 52295286874999980
+    },
+    {
+      "building": 14,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 1061788769888136300,
+      "paid": 1061788769888136300
+    },
+    {
+      "building": 14,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 4.0940670993503606e+23,
+      "paid": 4.0940670993503606e+23
+    },
+    {
+      "building": 14,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 855892768114529900,
+      "paid": 855892768114529900
+    },
+    {
+      "building": 14,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 17377805605784414000,
+      "paid": 17377805605784414000
+    },
+    {
+      "building": 14,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 6.700570227074801e+24,
+      "paid": 6.700570227074801e+24
+    },
+    {
+      "building": 14,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 3.053214971820726e+22,
+      "paid": 3.053214971820726e+22
+    },
+    {
+      "building": 14,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 6.199161650805212e+23,
+      "paid": 6.199161650805212e+23
+    },
+    {
+      "building": 14,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 2.3902855707157227e+29,
+      "paid": 2.3902855707157227e+29
+    },
+    {
+      "building": 14,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 6.81832283054243e+52,
+      "paid": 6.81832283054243e+52
+    },
+    {
+      "building": 14,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 1.3843730560741561e+54,
+      "paid": 1.3843730560741561e+54
+    },
+    {
+      "building": 14,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 5.337894261866634e+59,
+      "paid": 5.337894261866634e+59
+    },
+    {
+      "building": 15,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 310000000000000000,
+      "paid": 310000000000000000
+    },
+    {
+      "building": 15,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 6294152653796345000,
+      "paid": 6294152653796345000
+    },
+    {
+      "building": 15,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 2.4269123981139123e+24,
+      "paid": 2.4269123981139123e+24
+    },
+    {
+      "building": 15,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 356500000000000000,
+      "paid": 356500000000000000
+    },
+    {
+      "building": 15,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 7238275551865796000,
+      "paid": 7238275551865796000
+    },
+    {
+      "building": 15,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 2.790949257830999e+24,
+      "paid": 2.790949257830999e+24
+    },
+    {
+      "building": 15,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 623520728124999800,
+      "paid": 623520728124999800
+    },
+    {
+      "building": 15,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 12659789179435473000,
+      "paid": 12659789179435473000
+    },
+    {
+      "building": 15,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 4.881387695379278e+24,
+      "paid": 4.881387695379278e+24
+    },
+    {
+      "building": 15,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 10204875312134780000,
+      "paid": 10204875312134780000
+    },
+    {
+      "building": 15,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 207196912992044940000,
+      "paid": 207196912992044940000
+    },
+    {
+      "building": 15,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 7.989141424589186e+25,
+      "paid": 7.989141424589186e+25
+    },
+    {
+      "building": 15,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 3.640371697170866e+23,
+      "paid": 3.640371697170866e+23
+    },
+    {
+      "building": 15,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 7.391308122113905e+24,
+      "paid": 7.391308122113905e+24
+    },
+    {
+      "building": 15,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 2.849955872776438e+30,
+      "paid": 2.849955872776438e+30
+    },
+    {
+      "building": 15,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 8.129538759492896e+53,
+      "paid": 8.129538759492896e+53
+    },
+    {
+      "building": 15,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 1.6505986437807245e+55,
+      "paid": 1.6505986437807245e+55
+    },
+    {
+      "building": 15,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 6.364412389148679e+60,
+      "paid": 6.364412389148679e+60
+    },
+    {
+      "building": 16,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 71000000000000000000,
+      "paid": 71000000000000000000
+    },
+    {
+      "building": 16,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 1.4415639949017437e+21,
+      "paid": 1.4415639949017437e+21
+    },
+    {
+      "building": 16,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 5.5584122666479924e+26,
+      "paid": 5.5584122666479924e+26
+    },
+    {
+      "building": 16,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 81650000000000000000,
+      "paid": 81650000000000000000
+    },
+    {
+      "building": 16,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 1.657798594137005e+21,
+      "paid": 1.657798594137005e+21
+    },
+    {
+      "building": 16,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 6.392174106645192e+26,
+      "paid": 6.392174106645192e+26
+    },
+    {
+      "building": 16,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 142806360312499960000,
+      "paid": 142806360312499960000
+    },
+    {
+      "building": 16,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 2.899500102386834e+21,
+      "paid": 2.899500102386834e+21
+    },
+    {
+      "building": 16,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 1.11799524636106e+27,
+      "paid": 1.11799524636106e+27
+    },
+    {
+      "building": 16,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 2.3372456360050625e+21,
+      "paid": 2.3372456360050625e+21
+    },
+    {
+      "building": 16,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 4.745477684656513e+22,
+      "paid": 4.745477684656513e+22
+    },
+    {
+      "building": 16,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 1.8297711004704264e+28,
+      "paid": 1.8297711004704264e+28
+    },
+    {
+      "building": 16,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 8.337625499971984e+25,
+      "paid": 8.337625499971984e+25
+    },
+    {
+      "building": 16,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 1.6928479892583464e+27,
+      "paid": 1.6928479892583464e+27
+    },
+    {
+      "building": 16,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 6.527318289262166e+32,
+      "paid": 6.527318289262166e+32
+    },
+    {
+      "building": 16,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 1.8619266191096634e+56,
+      "paid": 1.8619266191096634e+56
+    },
+    {
+      "building": 16,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 3.7804033454332726e+57,
+      "paid": 3.7804033454332726e+57
+    },
+    {
+      "building": 16,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 1.4576557407405039e+63,
+      "paid": 1.4576557407405039e+63
+    },
+    {
+      "building": 17,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 1.2e+22,
+      "paid": 1.2e+22
+    },
+    {
+      "building": 17,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 2.4364461885663273e+23,
+      "paid": 2.4364461885663273e+23
+    },
+    {
+      "building": 17,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 9.39449960560224e+28,
+      "paid": 9.39449960560224e+28
+    },
+    {
+      "building": 17,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 1.3799999999999998e+22,
+      "paid": 1.3799999999999998e+22
+    },
+    {
+      "building": 17,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 2.8019131168512762e+23,
+      "paid": 2.8019131168512762e+23
+    },
+    {
+      "building": 17,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 1.0803674546442576e+29,
+      "paid": 1.0803674546442576e+29
+    },
+    {
+      "building": 17,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 2.4136286249999994e+22,
+      "paid": 2.4136286249999994e+22
+    },
+    {
+      "building": 17,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 4.900563553329861e+23,
+      "paid": 4.900563553329861e+23
+    },
+    {
+      "building": 17,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 1.8895694304693977e+29,
+      "paid": 1.8895694304693977e+29
+    },
+    {
+      "building": 17,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 3.950274314374754e+23,
+      "paid": 3.950274314374754e+23
+    },
+    {
+      "building": 17,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 8.020525664208191e+24,
+      "paid": 8.020525664208191e+24
+    },
+    {
+      "building": 17,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 3.092570874034524e+30,
+      "paid": 3.092570874034524e+30
+    },
+    {
+      "building": 17,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 1.4091761408403352e+28,
+      "paid": 1.4091761408403352e+28
+    },
+    {
+      "building": 17,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 2.861151531140867e+29,
+      "paid": 2.861151531140867e+29
+    },
+    {
+      "building": 17,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 1.103208724945718e+35,
+      "paid": 1.103208724945718e+35
+    },
+    {
+      "building": 17,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 3.146918229481121e+58,
+      "paid": 3.146918229481121e+58
+    },
+    {
+      "building": 17,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 6.389414104957644e+59,
+      "paid": 6.389414104957644e+59
+    },
+    {
+      "building": 17,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 2.463643505476908e+65,
+      "paid": 2.463643505476908e+65
+    },
+    {
+      "building": 18,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 1.9000000000000003e+24,
+      "paid": 1.9000000000000003e+24
+    },
+    {
+      "building": 18,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 3.857706465230019e+25,
+      "paid": 3.857706465230019e+25
+    },
+    {
+      "building": 18,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 1.4874624375536884e+31,
+      "paid": 1.4874624375536884e+31
+    },
+    {
+      "building": 18,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 2.1850000000000002e+24,
+      "paid": 2.1850000000000002e+24
+    },
+    {
+      "building": 18,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 4.436362435014521e+25,
+      "paid": 4.436362435014521e+25
+    },
+    {
+      "building": 18,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 1.7105818031867416e+31,
+      "paid": 1.7105818031867416e+31
+    },
+    {
+      "building": 18,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 3.82157865625e+24,
+      "paid": 3.82157865625e+24
+    },
+    {
+      "building": 18,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 7.759225626105614e+25,
+      "paid": 7.759225626105614e+25
+    },
+    {
+      "building": 18,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 2.9918182649098797e+31,
+      "paid": 2.9918182649098797e+31
+    },
+    {
+      "building": 18,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 6.2546009977600275e+25,
+      "paid": 6.2546009977600275e+25
+    },
+    {
+      "building": 18,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 1.2699165634996304e+27,
+      "paid": 1.2699165634996304e+27
+    },
+    {
+      "building": 18,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 4.8965705505546634e+32,
+      "paid": 4.8965705505546634e+32
+    },
+    {
+      "building": 18,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 2.2311955563305313e+30,
+      "paid": 2.2311955563305313e+30
+    },
+    {
+      "building": 18,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 4.53015659097304e+31,
+      "paid": 4.53015659097304e+31
+    },
+    {
+      "building": 18,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 1.7467471478307207e+37,
+      "paid": 1.7467471478307207e+37
+    },
+    {
+      "building": 18,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 4.982620530011776e+60,
+      "paid": 4.982620530011776e+60
+    },
+    {
+      "building": 18,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 1.0116572332849604e+62,
+      "paid": 1.0116572332849604e+62
+    },
+    {
+      "building": 18,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 3.900768883671772e+67,
+      "paid": 3.900768883671772e+67
+    },
+    {
+      "building": 19,
+      "owned": 0,
+      "quantity": 1,
+      "quote": 5.4e+26,
+      "paid": 5.4e+26
+    },
+    {
+      "building": 19,
+      "owned": 0,
+      "quantity": 10,
+      "quote": 1.0964007848548473e+28,
+      "paid": 1.0964007848548473e+28
+    },
+    {
+      "building": 19,
+      "owned": 0,
+      "quantity": 100,
+      "quote": 4.227524822521009e+33,
+      "paid": 4.227524822521009e+33
+    },
+    {
+      "building": 19,
+      "owned": 1,
+      "quantity": 1,
+      "quote": 6.21e+26,
+      "paid": 6.21e+26
+    },
+    {
+      "building": 19,
+      "owned": 1,
+      "quantity": 10,
+      "quote": 1.2608609025830744e+28,
+      "paid": 1.2608609025830744e+28
+    },
+    {
+      "building": 19,
+      "owned": 1,
+      "quantity": 100,
+      "quote": 4.8616535458991597e+33,
+      "paid": 4.8616535458991597e+33
+    },
+    {
+      "building": 19,
+      "owned": 5,
+      "quantity": 1,
+      "quote": 1.0861328812499997e+27,
+      "paid": 1.0861328812499997e+27
+    },
+    {
+      "building": 19,
+      "owned": 5,
+      "quantity": 10,
+      "quote": 2.2052535989984373e+28,
+      "paid": 2.2052535989984373e+28
+    },
+    {
+      "building": 19,
+      "owned": 5,
+      "quantity": 100,
+      "quote": 8.50306243711229e+33,
+      "paid": 8.50306243711229e+33
+    },
+    {
+      "building": 19,
+      "owned": 25,
+      "quantity": 1,
+      "quote": 1.7776234414686392e+28,
+      "paid": 1.7776234414686392e+28
+    },
+    {
+      "building": 19,
+      "owned": 25,
+      "quantity": 10,
+      "quote": 3.6092365488936864e+29,
+      "paid": 3.6092365488936864e+29
+    },
+    {
+      "building": 19,
+      "owned": 25,
+      "quantity": 100,
+      "quote": 1.3916568933155356e+35,
+      "paid": 1.3916568933155356e+35
+    },
+    {
+      "building": 19,
+      "owned": 100,
+      "quantity": 1,
+      "quote": 6.341292633781508e+32,
+      "paid": 6.341292633781508e+32
+    },
+    {
+      "building": 19,
+      "owned": 100,
+      "quantity": 10,
+      "quote": 1.2875181890133902e+34,
+      "paid": 1.2875181890133902e+34
+    },
+    {
+      "building": 19,
+      "owned": 100,
+      "quantity": 100,
+      "quote": 4.964439262255731e+39,
+      "paid": 4.964439262255731e+39
+    },
+    {
+      "building": 19,
+      "owned": 600,
+      "quantity": 1,
+      "quote": 1.4161132032665046e+63,
+      "paid": 1.4161132032665046e+63
+    },
+    {
+      "building": 19,
+      "owned": 600,
+      "quantity": 10,
+      "quote": 2.8752363472309394e+64,
+      "paid": 2.8752363472309394e+64
+    },
+    {
+      "building": 19,
+      "owned": 600,
+      "quantity": 100,
+      "quote": 1.1086395774646086e+70,
+      "paid": 1.1086395774646086e+70
+    }
+  ],
+  "cursors": [
+    {
+      "tiers": [],
+      "nonCursor": 0,
+      "unit": 0.1,
+      "click": 1
+    },
+    {
+      "tiers": [],
+      "nonCursor": 1,
+      "unit": 0.1,
+      "click": 1
+    },
+    {
+      "tiers": [],
+      "nonCursor": 100,
+      "unit": 0.1,
+      "click": 1
+    },
+    {
+      "tiers": [
+        1
+      ],
+      "nonCursor": 0,
+      "unit": 0.2,
+      "click": 2
+    },
+    {
+      "tiers": [
+        1
+      ],
+      "nonCursor": 1,
+      "unit": 0.2,
+      "click": 2
+    },
+    {
+      "tiers": [
+        1
+      ],
+      "nonCursor": 100,
+      "unit": 0.2,
+      "click": 2
+    },
+    {
+      "tiers": [
+        2
+      ],
+      "nonCursor": 0,
+      "unit": 0.2,
+      "click": 2
+    },
+    {
+      "tiers": [
+        2
+      ],
+      "nonCursor": 1,
+      "unit": 0.2,
+      "click": 2
+    },
+    {
+      "tiers": [
+        2
+      ],
+      "nonCursor": 100,
+      "unit": 0.2,
+      "click": 2
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3
+      ],
+      "nonCursor": 0,
+      "unit": 0.8,
+      "click": 8
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3
+      ],
+      "nonCursor": 1,
+      "unit": 0.8,
+      "click": 8
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3
+      ],
+      "nonCursor": 100,
+      "unit": 0.8,
+      "click": 8
+    },
+    {
+      "tiers": [
+        4
+      ],
+      "nonCursor": 0,
+      "unit": 0.1,
+      "click": 1
+    },
+    {
+      "tiers": [
+        4
+      ],
+      "nonCursor": 1,
+      "unit": 0.2,
+      "click": 1.1
+    },
+    {
+      "tiers": [
+        4
+      ],
+      "nonCursor": 100,
+      "unit": 10.1,
+      "click": 11
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "nonCursor": 0,
+      "unit": 0.8,
+      "click": 8
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "nonCursor": 1,
+      "unit": 0.9,
+      "click": 8.1
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "nonCursor": 100,
+      "unit": 10.8,
+      "click": 18
+    },
+    {
+      "tiers": [
+        4,
+        5,
+        6
+      ],
+      "nonCursor": 0,
+      "unit": 0.1,
+      "click": 1
+    },
+    {
+      "tiers": [
+        4,
+        5,
+        6
+      ],
+      "nonCursor": 1,
+      "unit": 5.1,
+      "click": 6
+    },
+    {
+      "tiers": [
+        4,
+        5,
+        6
+      ],
+      "nonCursor": 100,
+      "unit": 500.1,
+      "click": 501
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "nonCursor": 0,
+      "unit": 0.8,
+      "click": 8
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "nonCursor": 1,
+      "unit": 2560000000000.8,
+      "click": 2560000000008
+    },
+    {
+      "tiers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "nonCursor": 100,
+      "unit": 256000000000000.8,
+      "click": 256000000000008
+    }
+  ]
+}

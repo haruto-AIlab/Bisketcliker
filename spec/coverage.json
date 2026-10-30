@@ -1,0 +1,134 @@
+{
+  "milestone": 1,
+  "targetVersion": "2.058",
+  "runtimeUpgradeCountVerified": false,
+  "runtimeAchievementCountVerified": false,
+  "systems": [
+    {
+      "id": "core",
+      "status": "implemented",
+      "covered": "20 buildings, sequential rounded purchases, partial buys, sales, baseline CpS/CpC",
+      "pending": "frame-order parity, extreme-number parity"
+    },
+    {
+      "id": "building-upgrades",
+      "status": "implemented",
+      "covered": "300 building upgrades incl. cursor exceptions",
+      "pending": "unshackled and synergy modifiers"
+    },
+    {
+      "id": "all-upgrades",
+      "status": "partial-data",
+      "covered": "1494 main.js declaration sites including achievement helpers; costs/powers where literal",
+      "pending": "runtime IDs, pools, parent graph, dynamic price, unlocks, per-item effects, 717/129 counts"
+    },
+    {
+      "id": "achievements",
+      "status": "partial",
+      "covered": "298 building-ownership conditions implemented",
+      "pending": "all other awards, shadow pools, milk-sensitive full production, exceptions"
+    },
+    {
+      "id": "golden-cookie",
+      "status": "formula-only",
+      "covered": "spawn hazard, lucky amount, 4 buff definitions",
+      "pending": "ordered conditional effect pool, anti-repeat, chain/storm, wrath, interactions, natural spawn UI"
+    },
+    {
+      "id": "buffs",
+      "status": "partial",
+      "covered": "four scalar archetypes; same type duration addition; distinct type multiplication",
+      "pending": "all archetypes, on-expire actions, forced effects, per-frame update order"
+    },
+    {
+      "id": "ascension",
+      "status": "formula-only",
+      "covered": "prestige cube-root and thresholds",
+      "pending": "reset transaction, chip awards, retained state, challenge modes"
+    },
+    {
+      "id": "heavenly-tree",
+      "status": "unimplemented",
+      "covered": "declaration locations only",
+      "pending": "129 individual nodes, parent edges, costs, unlock logic, permanent slots"
+    },
+    {
+      "id": "sugar-lump",
+      "status": "formula-only",
+      "covered": "100/600 caps; metadata only",
+      "pending": "growth, types, harvest RNG, levels, persistence, unlocks"
+    },
+    {
+      "id": "garden",
+      "status": "metadata-only",
+      "covered": "34 plant numeric records",
+      "pending": "mutation predicates/probabilities, adjacency order, soils, grid sizes, freeze, harvest/drop/effect functions"
+    },
+    {
+      "id": "grimoire",
+      "status": "metadata-only",
+      "covered": "9 spell cost records",
+      "pending": "seeded RNG call order, spells success/backfire, refill limits, regeneration/towers"
+    },
+    {
+      "id": "pantheon",
+      "status": "metadata-only",
+      "covered": "11 spirit records",
+      "pending": "slot effect semantics, swap/refill state machine, cross-system effects"
+    },
+    {
+      "id": "stock-market",
+      "status": "metadata-only",
+      "covered": "18 goods records",
+      "pending": "six price modes, mode transitions, rounding, capacity, brokers, office levels, loans, achievements"
+    },
+    {
+      "id": "grandmapocalypse",
+      "status": "unimplemented",
+      "covered": "main.js reference locations",
+      "pending": "research timing, stage changes, pledges, covenant and drop interactions"
+    },
+    {
+      "id": "wrinkler",
+      "status": "unimplemented",
+      "covered": "main.js reference locations",
+      "pending": "spawn/shiny probabilities, pooled intake and payout, slot caps, aura interactions"
+    },
+    {
+      "id": "dragon",
+      "status": "unimplemented",
+      "covered": "main.js reference locations",
+      "pending": "training costs, sacrifice, aura switching, dual slots, pet windows/drops"
+    },
+    {
+      "id": "seasons",
+      "status": "unimplemented",
+      "covered": "main.js reference locations",
+      "pending": "calendar, switching, dynamic costs, all seasonal drops, event state"
+    },
+    {
+      "id": "offline",
+      "status": "baseline-only",
+      "covered": "zero earnings before heavenly gate; load excludes buffs; stored durations resume",
+      "pending": "all offline upgrades, optimal/reduced time segments, herald snapshot, minigames and lump offline behavior"
+    },
+    {
+      "id": "save-load",
+      "status": "partial",
+      "covered": "versioned own-format JSON, v1 migration, validation, local storage, import/export",
+      "pending": "future state migrations, all-system saves, original save compatibility intentionally absent"
+    },
+    {
+      "id": "verification",
+      "status": "partial",
+      "covered": "pinned mirror output fixtures, unit and browser tests",
+      "pending": "official live-version comparison and complete state-space parity"
+    },
+    {
+      "id": "hosting",
+      "status": "local-only",
+      "covered": "static browser app and Node dev server",
+      "pending": "chatgptsites tools unavailable; no public deployment"
+    }
+  ]
+}

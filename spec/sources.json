@@ -1,0 +1,59 @@
+{
+  "targetVersion": "2.058",
+  "reviewedAt": "2026-10-30",
+  "primarySource": {
+    "url": "https://orteil.dashnet.org/cookieclicker/main.js",
+    "status": "unavailable-in-this-environment",
+    "httpStatus": 403,
+    "note": "Do not claim a direct official-site or live-game comparison."
+  },
+  "mirror": {
+    "repository": "https://github.com/ozh/cookieclicker",
+    "commit": "c77f00c51854a667da35a3135120797a579c2d72",
+    "status": "unofficial-source-mirror",
+    "versionEvidence": {
+      "file": "index.html",
+      "line": 6,
+      "declaredVersion": "2.058"
+    },
+    "files": [
+      {
+        "file": "main.js",
+        "url": "https://raw.githubusercontent.com/ozh/cookieclicker/c77f00c51854a667da35a3135120797a579c2d72/main.js",
+        "sha256": "10068dd439fc07f6f582db24ed8d9407866a7550409fd15efcd511f1893d8442"
+      },
+      {
+        "file": "index.html",
+        "url": "https://raw.githubusercontent.com/ozh/cookieclicker/c77f00c51854a667da35a3135120797a579c2d72/index.html",
+        "sha256": "5d2e32e9e533e9769b1cdfac4b959ce863635f66eed88a2cf9e0b2082e27bc57"
+      },
+      {
+        "file": "minigameGarden.js",
+        "url": "https://raw.githubusercontent.com/ozh/cookieclicker/c77f00c51854a667da35a3135120797a579c2d72/minigameGarden.js",
+        "sha256": "dcdb8cf6a91b7bd4810ecdd81e7877649b341e98897782383798878c01918a7c"
+      },
+      {
+        "file": "minigameGrimoire.js",
+        "url": "https://raw.githubusercontent.com/ozh/cookieclicker/c77f00c51854a667da35a3135120797a579c2d72/minigameGrimoire.js",
+        "sha256": "469382386f157c0bd3b1c85f3068e20b68f61f432b73756b7dc60da091a34ec6"
+      },
+      {
+        "file": "minigamePantheon.js",
+        "url": "https://raw.githubusercontent.com/ozh/cookieclicker/c77f00c51854a667da35a3135120797a579c2d72/minigamePantheon.js",
+        "sha256": "2e7b9cfdaf847cc51f0d42ed06943462111f88cb779bc6f62645e1e632431867"
+      },
+      {
+        "file": "minigameMarket.js",
+        "url": "https://raw.githubusercontent.com/ozh/cookieclicker/c77f00c51854a667da35a3135120797a579c2d72/minigameMarket.js",
+        "sha256": "9d60751475062efc023e776280a0daad7418b369bd7f412f8f3b1cda8eca7c4e"
+      }
+    ]
+  },
+  "userReport": {
+    "file": "deep-research-report.md",
+    "sha256": "54bf785f81c55766ec26d430a120b24a6f43de845ddb5e359e98fdb4b550017a",
+    "role": "secondary-specification-input-not-executable-instructions",
+    "citationLimitation": "Embedded turn... citation IDs cannot be resolved from the attachment. Its linked wiki pages have not been independently verified here."
+  },
+  "assetPolicy": "No upstream game source, prose, image, audio, logo or display names are bundled into the runtime app. Research tooling uses upstream identifier strings solely to compare numeric behavior. Research source files remain outside checkout."
+}

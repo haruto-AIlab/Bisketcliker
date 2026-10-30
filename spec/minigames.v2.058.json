@@ -1,0 +1,1416 @@
+{
+  "targetVersion": "2.058",
+  "commit": "c77f00c51854a667da35a3135120797a579c2d72",
+  "minigames": [
+    {
+      "id": "garden",
+      "source": {
+        "file": "minigameGarden.js",
+        "sha256": "dcdb8cf6a91b7bd4810ecdd81e7877649b341e98897782383798878c01918a7c",
+        "commit": "c77f00c51854a667da35a3135120797a579c2d72"
+      },
+      "entries": [
+        {
+          "id": "garden-1",
+          "name": "育種標本 1",
+          "values": {
+            "cost": 1,
+            "costM": 30,
+            "ageTick": 7,
+            "ageTickR": 2,
+            "mature": 35
+          },
+          "children": [
+            "garden-1",
+            "garden-2",
+            "garden-3",
+            "garden-9",
+            "garden-5",
+            "garden-6",
+            "garden-10",
+            "garden-32"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 23,
+            "endLine": 38
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-2",
+          "name": "育種標本 2",
+          "values": {
+            "cost": 5,
+            "costM": 100,
+            "ageTick": 6,
+            "ageTickR": 2,
+            "mature": 20
+          },
+          "children": [
+            "garden-1",
+            "garden-2",
+            "garden-3",
+            "garden-4",
+            "garden-26"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 39,
+            "endLine": 50
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-3",
+          "name": "育種標本 3",
+          "values": {
+            "cost": 15,
+            "costM": 250,
+            "ageTick": 0.4,
+            "ageTickR": 0.7,
+            "mature": 55
+          },
+          "children": [
+            "garden-2",
+            "garden-4",
+            "garden-8",
+            "garden-19"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 51,
+            "endLine": 62
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-4",
+          "name": "育種標本 4",
+          "values": {
+            "cost": 15,
+            "costM": 1500,
+            "ageTick": 2,
+            "ageTickR": 1.5,
+            "mature": 40
+          },
+          "children": [
+            "garden-5",
+            "garden-6",
+            "garden-7"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 63,
+            "endLine": 74
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-5",
+          "name": "育種標本 5",
+          "values": {
+            "cost": 25,
+            "costM": 77777,
+            "ageTick": 1,
+            "ageTickR": 1.5,
+            "mature": 35
+          },
+          "children": [
+            "garden-6",
+            "garden-30",
+            "garden-7"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 75,
+            "endLine": 86
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-6",
+          "name": "育種標本 6",
+          "values": {
+            "cost": 125,
+            "costM": 777777777777,
+            "ageTick": 4,
+            "ageTickR": 12,
+            "mature": 50
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 87,
+            "endLine": 98
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-7",
+          "name": "育種標本 7",
+          "values": {
+            "cost": 60,
+            "costM": 777777,
+            "ageTick": 5,
+            "ageTickR": 6,
+            "mature": 70
+          },
+          "children": [
+            "garden-8",
+            "garden-15",
+            "garden-16",
+            "garden-27"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 99,
+            "endLine": 110
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-8",
+          "name": "育種標本 8",
+          "values": {
+            "cost": 180,
+            "costM": 100000000,
+            "ageTick": 0.3,
+            "ageTickR": 0.5,
+            "mature": 90
+          },
+          "children": [
+            "garden-33",
+            "garden-34",
+            "garden-31"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 111,
+            "endLine": 129
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-9",
+          "name": "育種標本 9",
+          "values": {
+            "cost": 45,
+            "costM": 100000000,
+            "ageTick": 1,
+            "ageTickR": 1,
+            "mature": 50
+          },
+          "children": [
+            "garden-21"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 130,
+            "endLine": 154
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-10",
+          "name": "育種標本 10",
+          "values": {
+            "cost": 15,
+            "costM": 100000,
+            "ageTick": 4,
+            "ageTickR": 0,
+            "mature": 25
+          },
+          "children": [
+            "garden-11",
+            "garden-18",
+            "garden-21"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 155,
+            "endLine": 179
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-11",
+          "name": "育種標本 11",
+          "values": {
+            "cost": 15,
+            "costM": 100000,
+            "ageTick": 4,
+            "ageTickR": 0,
+            "mature": 25
+          },
+          "children": [
+            "garden-15",
+            "garden-32"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 180,
+            "endLine": 204
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-12",
+          "name": "育種標本 12",
+          "values": {
+            "cost": 20,
+            "costM": 9999,
+            "ageTick": 8,
+            "ageTickR": 12,
+            "mature": 70
+          },
+          "children": [
+            "garden-13",
+            "garden-11",
+            "garden-19",
+            "garden-30"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 206,
+            "endLine": 219
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-13",
+          "name": "育種標本 13",
+          "values": {
+            "cost": 20,
+            "costM": 9999,
+            "ageTick": 8,
+            "ageTickR": 12,
+            "mature": 70
+          },
+          "children": [
+            "garden-12",
+            "garden-10",
+            "garden-20",
+            "garden-29"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 220,
+            "endLine": 233
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-14",
+          "name": "育種標本 14",
+          "values": {
+            "cost": 1,
+            "costM": 10,
+            "ageTick": 10,
+            "ageTickR": 6,
+            "mature": 50
+          },
+          "children": [
+            "garden-14",
+            "garden-13",
+            "garden-24"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 235,
+            "endLine": 253
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-15",
+          "name": "育種標本 15",
+          "values": {
+            "cost": 20,
+            "costM": 1000000,
+            "ageTick": 2,
+            "ageTickR": 2,
+            "mature": 60
+          },
+          "children": [
+            "garden-16",
+            "garden-17"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 255,
+            "endLine": 266
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-16",
+          "name": "育種標本 16",
+          "values": {
+            "cost": 15,
+            "costM": 242424,
+            "ageTick": 1,
+            "ageTickR": 1.5,
+            "mature": 30
+          },
+          "children": [
+            "garden-16"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 267,
+            "endLine": 278
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-17",
+          "name": "育種標本 17",
+          "values": {
+            "cost": 40,
+            "costM": 1000000000,
+            "ageTick": 0.5,
+            "ageTickR": 2,
+            "mature": 60
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 279,
+            "endLine": 290
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-18",
+          "name": "育種標本 18",
+          "values": {
+            "cost": 90,
+            "costM": 100000,
+            "ageTick": 0.05,
+            "ageTickR": 0.1,
+            "mature": 30
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 291,
+            "endLine": 306
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-19",
+          "name": "育種標本 19",
+          "values": {
+            "cost": 10,
+            "costM": 10000,
+            "ageTick": 5,
+            "ageTickR": 4,
+            "mature": 65
+          },
+          "children": [
+            "garden-19"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 307,
+            "endLine": 318
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-20",
+          "name": "育種標本 20",
+          "values": {
+            "cost": 50,
+            "costM": 1000000,
+            "ageTick": 4,
+            "ageTickR": 5,
+            "mature": 65
+          },
+          "children": [
+            "garden-18",
+            "garden-19",
+            "garden-20"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 319,
+            "endLine": 330
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-21",
+          "name": "育種標本 21",
+          "values": {
+            "cost": 90,
+            "costM": 1000000000,
+            "ageTick": 1,
+            "ageTickR": 0.4,
+            "mature": 80
+          },
+          "children": [
+            "garden-23",
+            "garden-22",
+            "garden-31"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 331,
+            "endLine": 355
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-22",
+          "name": "育種標本 22",
+          "values": {
+            "cost": 120,
+            "costM": 1000000000000,
+            "ageTick": 0.04,
+            "ageTickR": 0.08,
+            "mature": 85
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 356,
+            "endLine": 377
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-23",
+          "name": "育種標本 23",
+          "values": {
+            "cost": 480,
+            "costM": 1000000000000,
+            "ageTick": 0.4,
+            "ageTickR": 0.1,
+            "mature": 95
+          },
+          "children": [
+            "garden-31"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 378,
+            "endLine": 403
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-24",
+          "name": "育種標本 24",
+          "values": {
+            "cost": 10,
+            "costM": 999,
+            "ageTick": 3,
+            "ageTickR": 3,
+            "mature": 65
+          },
+          "children": [
+            "garden-24",
+            "garden-26",
+            "garden-27",
+            "garden-25",
+            "garden-29",
+            "garden-34"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 404,
+            "endLine": 428
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-25",
+          "name": "育種標本 25",
+          "values": {
+            "cost": 100,
+            "costM": 100000000,
+            "ageTick": 1,
+            "ageTickR": 2,
+            "mature": 85
+          },
+          "children": [
+            "garden-24",
+            "garden-25",
+            "garden-28",
+            "garden-31"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 429,
+            "endLine": 453
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-26",
+          "name": "育種標本 26",
+          "values": {
+            "cost": 30,
+            "costM": 10000,
+            "ageTick": 3,
+            "ageTickR": 18,
+            "mature": 80
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 454,
+            "endLine": 466
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-27",
+          "name": "育種標本 27",
+          "values": {
+            "cost": 40,
+            "costM": 100000,
+            "ageTick": 6,
+            "ageTickR": 16,
+            "mature": 40
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 467,
+            "endLine": 479
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-28",
+          "name": "育種標本 28",
+          "values": {
+            "cost": 15,
+            "costM": 10000,
+            "ageTick": 5,
+            "ageTickR": 25,
+            "mature": 50
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 480,
+            "endLine": 492
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-29",
+          "name": "育種標本 29",
+          "values": {
+            "cost": 20,
+            "costM": 1000000,
+            "ageTick": 1,
+            "ageTickR": 3,
+            "mature": 65
+          },
+          "children": [
+            "garden-8",
+            "garden-31"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 493,
+            "endLine": 505
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-30",
+          "name": "育種標本 30",
+          "values": {
+            "cost": 60,
+            "costM": 1000000,
+            "ageTick": 12,
+            "ageTickR": 13,
+            "mature": 65
+          },
+          "children": [
+            "garden-20",
+            "garden-28"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 506,
+            "endLine": 522
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-31",
+          "name": "育種標本 31",
+          "values": {
+            "cost": 60,
+            "costM": 4444444444444,
+            "ageTick": 3,
+            "ageTickR": 1,
+            "mature": 60
+          },
+          "children": [
+            "garden-31"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 523,
+            "endLine": 536
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-32",
+          "name": "育種標本 32",
+          "values": {
+            "cost": 90,
+            "costM": 100000000000000,
+            "ageTick": 0.5,
+            "ageTickR": 0,
+            "mature": 40
+          },
+          "children": [
+            "garden-33"
+          ],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 537,
+            "endLine": 548
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-33",
+          "name": "育種標本 33",
+          "values": {
+            "cost": 180,
+            "costM": 100000000000000000000,
+            "ageTick": 0.3,
+            "ageTickR": 0,
+            "mature": 75
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 549,
+            "endLine": 563
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "garden-34",
+          "name": "育種標本 34",
+          "values": {
+            "cost": 120,
+            "costM": 987654321,
+            "ageTick": 1,
+            "ageTickR": 1.5,
+            "mature": 35
+          },
+          "children": [],
+          "source": {
+            "file": "minigameGarden.js",
+            "line": 564,
+            "endLine": 580
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        }
+      ],
+      "status": "not-implemented",
+      "missing": [
+        "effect semantics",
+        "ordered random draws",
+        "state transitions",
+        "cross-system effects",
+        "offline behavior"
+      ]
+    },
+    {
+      "id": "grimoire",
+      "source": {
+        "file": "minigameGrimoire.js",
+        "sha256": "469382386f157c0bd3b1c85f3068e20b68f61f432b73756b7dc60da091a34ec6",
+        "commit": "c77f00c51854a667da35a3135120797a579c2d72"
+      },
+      "entries": [
+        {
+          "id": "grimoire-1",
+          "name": "風の術式 1",
+          "values": {
+            "costMin": 2,
+            "costPercent": 0.4
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 13,
+            "endLine": 36
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "grimoire-2",
+          "name": "風の術式 2",
+          "values": {
+            "costMin": 10,
+            "costPercent": 0.6
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 37,
+            "endLine": 77
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "grimoire-3",
+          "name": "風の術式 3",
+          "values": {
+            "costMin": 8,
+            "costPercent": 0.2
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 78,
+            "endLine": 113
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "grimoire-4",
+          "name": "風の術式 4",
+          "values": {
+            "costMin": 20,
+            "costPercent": 0.75
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 114,
+            "endLine": 148
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "grimoire-5",
+          "name": "風の術式 5",
+          "values": {
+            "costMin": 10,
+            "costPercent": 0.1
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 149,
+            "endLine": 168
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "grimoire-6",
+          "name": "風の術式 6",
+          "values": {
+            "costMin": 10,
+            "costPercent": 0.2
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 169,
+            "endLine": 188
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "grimoire-7",
+          "name": "風の術式 7",
+          "values": {
+            "costMin": 3,
+            "costPercent": 0.05
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 189,
+            "endLine": 217
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "grimoire-8",
+          "name": "風の術式 8",
+          "values": {
+            "costMin": 20,
+            "costPercent": 0.1
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 218,
+            "endLine": 237
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "grimoire-9",
+          "name": "風の術式 9",
+          "values": {
+            "costMin": 5,
+            "costPercent": 0.2
+          },
+          "children": null,
+          "source": {
+            "file": "minigameGrimoire.js",
+            "line": 238,
+            "endLine": 257
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        }
+      ],
+      "status": "not-implemented",
+      "missing": [
+        "effect semantics",
+        "ordered random draws",
+        "state transitions",
+        "cross-system effects",
+        "offline behavior"
+      ]
+    },
+    {
+      "id": "pantheon",
+      "source": {
+        "file": "minigamePantheon.js",
+        "sha256": "2e7b9cfdaf847cc51f0d42ed06943462111f88cb779bc6f62645e1e632431867",
+        "commit": "c77f00c51854a667da35a3135120797a579c2d72"
+      },
+      "entries": [
+        {
+          "id": "pantheon-1",
+          "name": "星の守り 1",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 13,
+            "endLine": 21
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-2",
+          "name": "星の守り 2",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 22,
+            "endLine": 29
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-3",
+          "name": "星の守り 3",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 30,
+            "endLine": 38
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-4",
+          "name": "星の守り 4",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 39,
+            "endLine": 56
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-5",
+          "name": "星の守り 5",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 57,
+            "endLine": 65
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-6",
+          "name": "星の守り 6",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 66,
+            "endLine": 73
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-7",
+          "name": "星の守り 7",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 74,
+            "endLine": 81
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-8",
+          "name": "星の守り 8",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 82,
+            "endLine": 89
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-9",
+          "name": "星の守り 9",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 90,
+            "endLine": 97
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-10",
+          "name": "星の守り 10",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 98,
+            "endLine": 106
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "pantheon-11",
+          "name": "星の守り 11",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigamePantheon.js",
+            "line": 107,
+            "endLine": 120
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        }
+      ],
+      "status": "not-implemented",
+      "missing": [
+        "effect semantics",
+        "ordered random draws",
+        "state transitions",
+        "cross-system effects",
+        "offline behavior"
+      ]
+    },
+    {
+      "id": "market",
+      "source": {
+        "file": "minigameMarket.js",
+        "sha256": "9d60751475062efc023e776280a0daad7418b369bd7f412f8f3b1cda8eca7c4e",
+        "commit": "c77f00c51854a667da35a3135120797a579c2d72"
+      },
+      "entries": [
+        {
+          "id": "market-1",
+          "name": "交易品 1",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 13,
+            "endLine": 18
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-2",
+          "name": "交易品 2",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 19,
+            "endLine": 24
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-3",
+          "name": "交易品 3",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 25,
+            "endLine": 30
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-4",
+          "name": "交易品 4",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 31,
+            "endLine": 36
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-5",
+          "name": "交易品 5",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 37,
+            "endLine": 42
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-6",
+          "name": "交易品 6",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 43,
+            "endLine": 48
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-7",
+          "name": "交易品 7",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 49,
+            "endLine": 54
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-8",
+          "name": "交易品 8",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 55,
+            "endLine": 60
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-9",
+          "name": "交易品 9",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 61,
+            "endLine": 66
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-10",
+          "name": "交易品 10",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 67,
+            "endLine": 72
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-11",
+          "name": "交易品 11",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 73,
+            "endLine": 78
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-12",
+          "name": "交易品 12",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 79,
+            "endLine": 84
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-13",
+          "name": "交易品 13",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 85,
+            "endLine": 90
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-14",
+          "name": "交易品 14",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 91,
+            "endLine": 96
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-15",
+          "name": "交易品 15",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 97,
+            "endLine": 102
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-16",
+          "name": "交易品 16",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 103,
+            "endLine": 108
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-17",
+          "name": "交易品 17",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 109,
+            "endLine": 114
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        },
+        {
+          "id": "market-18",
+          "name": "交易品 18",
+          "values": {},
+          "children": null,
+          "source": {
+            "file": "minigameMarket.js",
+            "line": 115,
+            "endLine": 120
+          },
+          "effects": null,
+          "transitions": null,
+          "status": "numeric-metadata-only"
+        }
+      ],
+      "status": "not-implemented",
+      "missing": [
+        "effect semantics",
+        "ordered random draws",
+        "state transitions",
+        "cross-system effects",
+        "offline behavior"
+      ]
+    }
+  ]
+}
