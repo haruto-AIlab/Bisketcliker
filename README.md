@@ -4,8 +4,8 @@
 
 ## ダウンロード
 
-- [ゲーム単一HTML版](https://github.com/haruto-AIlab/Bisketcliker/raw/refs/heads/bisket-stage1-download/downloads/bisket.html)
-- [ソース・仕様資料一式ZIP](https://github.com/haruto-AIlab/Bisketcliker/raw/refs/heads/bisket-stage1-download/downloads/bisket-source.zip)
+- [ゲーム単一HTML版](https://github.com/haruto-AIlab/Bisketcliker/raw/refs/heads/main/downloads/bisket.html)
+- [ソース・仕様資料一式ZIP](https://github.com/haruto-AIlab/Bisketcliker/raw/refs/heads/main/downloads/bisket-source.zip)
 
 Safariではリンクを長押し、または右クリックしてリンク先のファイルをダウンロードできます。HTML版はCSSとJavaScriptを内蔵しています。Safari実機での検証は未実施です。iPhone/iPadのファイルアプリではHTMLがプレビュー表示になる場合があります。
 
@@ -26,6 +26,12 @@ BASE_URL=http://127.0.0.1:3100 CHROMIUM_PATH=/usr/bin/chromium npm run test:brow
 ```
 
 実行時は外部パッケージや外部画像・フォント・音声を要求しません。`index.html` と `src/` は静的ホスティングも可能。chatgptsitesへの配置・公開は未実施です。
+
+## GitHub Pages
+
+Settings → Pages で `main` ブランチのルートを指定して配信できます。プロジェクトURLは `https://haruto-ailab.github.io/Bisketcliker/` です。CSSとJavaScriptは相対パスで読み込むため、リポジトリ名のサブパスでも動きます。
+
+`npm run test:pages` は同じサブパスでCSSの適用・モジュール読み込み・ゲーム操作を検証します。
 
 ## 第1段階
 

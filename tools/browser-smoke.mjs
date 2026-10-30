@@ -7,7 +7,9 @@ try {
   const context=await browser.newContext({viewport:{width:1440,height:1050}});
   const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
   const base=process.env.BASE_URL||'http://127.0.0.1:3100';
-  await page.goto(base);await page.locator('#cookie').click({clickCount:15,delay:10});
+  await page.goto(base);
+  assert.equal(await page.locator('#cookie').evaluate(el=>getComputedStyle(el).width),'226px');
+  await page.locator('#cookie').click({clickCount:15,delay:10});
   await page.waitForFunction(()=>document.getElementById('cookies').textContent==='15');
   await page.locator('#buy-cursor').click();await page.waitForFunction(()=>document.getElementById('owned-cursor').textContent==='1');
   assert.equal(await page.locator('.facility').count(),20);

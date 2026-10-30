@@ -53,3 +53,7 @@ CHROMIUM_PATH=/usr/bin/chromium npm run test:browser
 - 全ミニゲーム、転生、オフライン天界効果、季節、竜、吸収、砂糖の統合。
 - Number精度限界付近の全挙動。原作同様Numberを使用するが完全互換は未検証。
 - 原作形式のセーブ相互変換は対象外。独自形式のみ。
+
+## GitHub Pagesのサブパス修正
+
+CSS/JavaScriptのルート絶対パスがプロジェクト配信で404になる問題を、相対パスに変更。`npm run test:pages` で `/Bisketcliker/` のみ配信するテストサーバーを使い、CSS適用・20施設・クリック・購入・強化・売却・保存復元・JSON入出力・モバイル表示を検証。成功。Safari実機の確認は未実施。

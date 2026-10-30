@@ -6,6 +6,7 @@
     "start": "node server.js",
     "test": "node --test --test-isolation=none",
     "test:browser": "node tools/browser-smoke.mjs",
+    "test:pages": "node tools/pages-smoke.mjs",
     "spec:extract": "node tools/extract-spec.mjs"
   },
   "engines": {
