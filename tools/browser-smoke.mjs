@@ -10,17 +10,17 @@ try {
   await page.goto(base);
   assert.equal(await page.locator('#cookie').evaluate(el=>getComputedStyle(el).width),'226px');
   await page.locator('#cookie').click({clickCount:15,delay:10});
-  await page.waitForFunction(()=>document.getElementById('cookies').textContent==='15');
+  await page.waitForFunction(()=>document.getElementById('cookies').textContent==='1,015');
   await page.locator('#buy-cursor').click();await page.waitForFunction(()=>document.getElementById('owned-cursor').textContent==='1');
   assert.equal(await page.locator('.facility').count(),20);
   await page.locator('[data-panel="upgrade-panel"]').click();assert.equal(await page.locator('#upgrade-cursor-tier-1').isVisible(),true);assert.equal(await page.locator('#upgrade-cursor-tier-2').isVisible(),true);assert.equal(await page.locator('#upgrade-cursor-tier-3').isVisible(),false);
   await page.locator('#save').click();await page.reload();await page.waitForFunction(()=>document.getElementById('owned-cursor').textContent==='1');
   // Deterministic starting balance for the upgrade/sell flow; no production cheat in UI.
   const seed=createState(Date.now());seed.cookies=1000;seed.earned=1000;
-  await context.addInitScript(s=>{if(!sessionStorage.getItem('smoke-seeded')){localStorage.setItem('bisket-save-v2',JSON.stringify(s));sessionStorage.setItem('smoke-seeded','1');}},seed);await page.reload();
+  await context.addInitScript(s=>{if(!sessionStorage.getItem('smoke-seeded')){localStorage.setItem('bisket-save-v3',JSON.stringify(s));sessionStorage.setItem('smoke-seeded','1');}},seed);await page.reload();
   await page.locator('#buy-cursor').click();await page.locator('[data-panel="upgrade-panel"]').click();await page.locator('#upgrade-cursor-tier-1').click();await page.waitForFunction(()=>document.getElementById('click-power').textContent==='+2 / CLICK');
   await page.locator('[data-panel="facility-panel"]').click();await page.locator('[data-mode="sell"]').click();await page.locator('#buy-cursor').click();await page.waitForFunction(()=>document.getElementById('owned-cursor').textContent==='0');
-  await page.locator('[data-panel="record-panel"]').click();assert.equal(await page.locator('#record-upgrades').textContent(),'1 / 300');assert.equal(await page.locator('#record-achievements').textContent(),'1 / 298');
+  await page.locator('[data-panel="record-panel"]').click();assert.equal(await page.locator('#record-upgrades').textContent(),'1 / 517');assert.equal(await page.locator('#record-achievements').textContent(),'3 / 410');
   await page.locator('#save').click();await page.reload();assert.equal(await page.locator('#click-power').textContent(),'+2 / CLICK');
   const download=page.waitForEvent('download');await page.locator('#export').click();assert.equal((await download).suggestedFilename(),'bisket-save.json');
   const badImport=JSON.stringify({...seed,version:99});await page.locator('#file').setInputFiles({name:'bad.json',mimeType:'application/json',buffer:Buffer.from(badImport)});await page.waitForFunction(()=>document.getElementById('save-status').textContent.includes('読み込み失敗'));

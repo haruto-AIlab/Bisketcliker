@@ -1,54 +1,48 @@
 # Bisket
 
-独自素材と独自名称で作るブラウザー型の放置生産ゲーム。Cookie Clicker v2.058のメカニクスを資料と照合し、動作する単位で実装しています。全機能の再現は未完了です。
+独自の名称・素材で作る放置生産ゲーム。v2.058の数値メカニクスを固定資料と照合し、段階的に開発しています。**全機能の再現は未完了**です。
 
-## ダウンロード
+新規工房は1,000クッキーから開始します。贈与分は焼成実績・転生ポイントに含めず、転生時やロード時に再配布しません。既存セーブの残高は維持します。
 
-- [ゲーム単一HTML版](https://github.com/haruto-AIlab/Bisketcliker/raw/refs/heads/main/downloads/bisket.html)
-- [ソース・仕様資料一式ZIP](https://github.com/haruto-AIlab/Bisketcliker/raw/refs/heads/main/downloads/bisket-source.zip)
+## 遊ぶ・ダウンロード
 
-Safariではリンクを長押し、または右クリックしてリンク先のファイルをダウンロードできます。HTML版はCSSとJavaScriptを内蔵しています。Safari実機での検証は未実施です。iPhone/iPadのファイルアプリではHTMLがプレビュー表示になる場合があります。
+- [GitHub Pages](https://haruto-ailab.github.io/Bisketcliker/)
+- [単一HTML版](https://github.com/haruto-AIlab/Bisketcliker/raw/refs/heads/main/downloads/bisket.html)
+- [ソース・仕様資料ZIP](https://github.com/haruto-AIlab/Bisketcliker/raw/refs/heads/main/downloads/bisket-source.zip)
+
+Safariではリンクを長押し、または右クリックしてダウンロードできます。MacではHTML単体をブラウザーで開けます。iPhone/iPadのファイルアプリではプレビューになる場合があります。Safari実機での確認は未実施です。
+
+## 現在の機能
+
+20施設、通常強化517件、実績410条件、Milk/Kitten・Mouse・シナジー、転生、天界129節点のデータと80効果、永続スロット、研究/異変3段階、休戦/永久休戦、吸収体、自然な光/闇イベントと主要バフ/連鎖/雨、天界に応じたオフライン生産、セーブ/入出力。
+
+未対応の前提を持つ天界節点は、効果実装済みでも取得できません。未実装効果を購入させることはしません。Sugar Lump、4ミニゲーム、竜、季節、残りの強化/実績等は未完成。[追加仕様と制限](docs/progression.md)と[機能台帳](spec/coverage.json)に具体的な範囲を記録しています。
 
 ## 起動・検証
 
-Node.js 22以上。
+Node.js 22以上。実行時の外部パッケージ・画像・音声・フォントは不要。配布ファイルの再生成にはPython 3を使用します。
 
 ```sh
 npm ci
 npm start
 npm test
+npm run test:pages
+npm run package:downloads
 ```
 
-ポートは3000。`PORT=3100 npm start` で変更できます。ブラウザーテストは別途起動したサーバーと既存Chromiumを使用します。
+ポート3000。`PORT=3100 npm start` で変更できます。`test:pages` は既存Chromium（`CHROMIUM_PATH`で指定可）と一時テストサーバーでプロジェクトのサブパスを再現し、基本操作と転生/研究の2シナリオを確認します。
 
-```sh
-BASE_URL=http://127.0.0.1:3100 CHROMIUM_PATH=/usr/bin/chromium npm run test:browser
-```
+GitHub PagesはSettings → Pagesで `main` のルートを配信します。アセット参照は相対パス。chatgptsitesには未配置です。
 
-実行時は外部パッケージや外部画像・フォント・音声を要求しません。`index.html` と `src/` は静的ホスティングも可能。chatgptsitesへの配置・公開は未実施です。
+## ソースとデータ
 
-## GitHub Pages
+- `src/engine.js`: DOMに依存しない状態、計算、時計、転生、研究、イベント、保存検証。
+- `src/app.js`: 画面、入力、v3ブラウザー保存、v1/v2からの移行。
+- `src/calculations.js`: 個別の数式。
+- `spec/core.v2.058.json`, `spec/progression.v2.058.json`: 出典付きデータ。動的・未監査項目は推測で埋めない。
+- `spec/minigames.v2.058.json`: ミニゲームの部分メタデータ。ゲームとしては未実装。
+- `spec/sources.json`: 固定コミット、ハッシュ、資料の確度。
+- `tools/extract-*.mjs`, `tools/reference-*.mjs`: 研究ソースの構文解析と数値照合。原作ソースは配布物に含めない。
+- [分析と段階計画](docs/spec-analysis.md)、[第2段階仕様](docs/progression.md)、[照合記録](docs/verification.md)。
 
-Settings → Pages で `main` ブランチのルートを指定して配信できます。プロジェクトURLは `https://haruto-ailab.github.io/Bisketcliker/` です。CSSとJavaScriptは相対パスで読み込むため、リポジトリ名のサブパスでも動きます。
-
-`npm run test:pages` は同じサブパスでCSSの適用・モジュール読み込み・ゲーム操作を検証します。
-
-## 第1段階
-
-20施設、基本強化300件、施設保有実績298件、価格計算、部分まとめ買い、売却、基本CpS/CpC、4種の倍率バフをエンジンへ実装。画面は施設・強化・記録を切り替えられます。バフのランダム出現は未実装です。
-
-10秒ごとにブラウザーへ自動保存し、JSON書き出し/読み込みができます。v1の残高と施設は移行し、元キーは残します。v1の仮バフは移行しません。天界解禁前のオフライン生産は0で、以前の仮の8時間補償は撤去しました。
-
-## 構成と仕様
-
-- `src/engine.js`: DOMに依存しない状態・購入・生産・保存検証。
-- `src/app.js`: UI、入力、ブラウザー保存。表示名とCSS図形は独自。
-- `src/calculations.js`: 後続段階に使う個別数式。全システムの実装を意味しません。
-- `spec/core.v2.058.json`: 20施設、300基本強化、298保有実績、出典位置。
-- `spec/mechanics.v2.058.json`: 計算順序・丸め・上限・確率式と、それぞれの実装範囲。
-- `spec/minigames.v2.058.json`: 34植物/9呪文/11精霊/18商品の部分メタデータ。未確定の効果/遷移はnull。
-- `spec/declaration-inventory.json`: 宣言箇所の調査台帳。実行時レジストリや全効果データではありません。
-- `spec/sources.json`, `spec/schema.ts`: 固定出典とデータ型。
-- [仕様分析と段階計画](docs/spec-analysis.md)、[照合記録](docs/verification.md)、[未実装・未検証台帳](spec/coverage.json)。
-
-公式サイトへこの環境からアクセスできず、固定コミットの非公式ソースミラーと照合しています。公式実機一致や完全再現はまだ主張できません。原作のコード、画像、音声、文章、ロゴは配布しません。
+公式サイトは環境から取得できず、固定コミットの非公式ミラーと照合しています。公式実機との完全一致は未検証です。原作の画像・音声・文章・ロゴは使用しません。

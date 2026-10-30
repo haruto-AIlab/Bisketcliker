@@ -57,3 +57,14 @@ CHROMIUM_PATH=/usr/bin/chromium npm run test:browser
 ## GitHub Pagesのサブパス修正
 
 CSS/JavaScriptのルート絶対パスがプロジェクト配信で404になる問題を、相対パスに変更。`npm run test:pages` で `/Bisketcliker/` のみ配信するテストサーバーを使い、CSS適用・20施設・クリック・購入・強化・売却・保存復元・JSON入出力・モバイル表示を検証。成功。Safari実機の確認は未実施。
+
+## 第2段階の照合（2026-10-30）
+
+- `npm test`: 49件成功。スターターの一度だけの支給、既存残高維持、加算/乗算順序、チップの差分/二重支給防止、永続スロット、研究/休戦の境界、吸収/返却、ロード/オフラインを検証。
+- `test/fixtures/reference-progression.json`: 固定ミラーのCalculateGainsとその依存関数を研究用VMで実行した24組合せ。レシピ、Kitten、Mouse、シナジー、研究、転生、Unshackled、永久休戦を含むraw/unbuffed/CpS/CpCが許容誤差1e-12で一致（単体CpC比較は1e-9）。オーラ/外部値/ミニゲームは無効。
+- `npm run test:pages`: 基本操作に加え、異変段階3→休戦→永久休戦→解除→転生→最初の天界購入→再読み込み→次周回、スマホの天界画面をブラウザーで検証。初期1,000と贈与分を除く生産数も確認。
+- `npm run package:downloads`: CSS/データ/計算/進行/UIをまとめた単一HTMLとZIPを再生成し、構文とZIP CRCを検証。
+
+再生成: `node tools/extract-progression.mjs /path/to/main-2.058.js`、`node tools/reference-progression.mjs /path/to/main-2.058.js`。期待ハッシュが一致しない参照は拒否する。
+
+天界データは直接定義94＋施設20＋tier15=129節点。これは静的生成経路の確認であり、全通常717件・通常実績622件を含む実行時レジストリ全体の照合は未完了。残りは `docs/progression.md` と `spec/coverage.json` を参照。

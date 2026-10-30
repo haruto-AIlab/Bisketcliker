@@ -1,5 +1,5 @@
 {
-  "milestone": 1,
+  "milestone": 2,
   "targetVersion": "2.058",
   "runtimeUpgradeCountVerified": false,
   "runtimeAchievementCountVerified": false,
@@ -7,50 +7,50 @@
     {
       "id": "core",
       "status": "implemented",
-      "covered": "20 buildings, sequential rounded purchases, partial buys, sales, baseline CpS/CpC",
-      "pending": "frame-order parity, extreme-number parity"
+      "covered": "20 buildings, starter gift 1000 without lifetime credit, baseline and progressed CpS/CpC, partial purchases and sales",
+      "pending": "full cross-system layers, exact frame-order parity"
     },
     {
       "id": "building-upgrades",
       "status": "implemented",
-      "covered": "300 building upgrades incl. cursor exceptions",
-      "pending": "unshackled and synergy modifiers"
+      "covered": "300 tiers plus Unshackled numeric effects and 54 synergies",
+      "pending": "unreachable unshackle prerequisite effects, full auras/minigame modifiers"
     },
     {
       "id": "all-upgrades",
-      "status": "partial-data",
-      "covered": "1494 main.js declaration sites including achievement helpers; costs/powers where literal",
-      "pending": "runtime IDs, pools, parent graph, dynamic price, unlocks, per-item effects, 717/129 counts"
+      "status": "partial",
+      "covered": "517 implemented normal upgrades; 132 special/dynamic recipe records unresolved",
+      "pending": "remaining individual normal upgrades, full 717-count runtime verification, special unlocks/drop side effects"
     },
     {
       "id": "achievements",
       "status": "partial",
-      "covered": "298 building-ownership conditions implemented",
-      "pending": "all other awards, shadow pools, milk-sensitive full production, exceptions"
+      "covered": "410 ownership, baked, raw-CpS and hand-made conditions; Milk/Kitten effects",
+      "pending": "remaining awards, shadows, achievement-specific secondary effects"
     },
     {
       "id": "golden-cookie",
-      "status": "formula-only",
-      "covered": "spawn hazard, lucky amount, 4 buff definitions",
-      "pending": "ordered conditional effect pool, anti-repeat, chain/storm, wrath, interactions, natural spawn UI"
+      "status": "partial",
+      "covered": "30fps spawn hazard; natural golden/wrath clicks; candidate construction, anti-repeat, Lucky/Ruin, chain/storm, core scalar/building/cursed buffs",
+      "pending": "sugar/dragon/season candidate branches, all modifiers, cosmetic/gameplay RNG stream compatibility"
     },
     {
       "id": "buffs",
       "status": "partial",
-      "covered": "four scalar archetypes; same type duration addition; distinct type multiplication",
-      "pending": "all archetypes, on-expire actions, forced effects, per-frame update order"
+      "covered": "scalar, distinct-building snapshot buffs, duration extension, cursed click power and storm",
+      "pending": "dragon, loans, spells, sugar and all special buff archetypes; original frame-order parity"
     },
     {
       "id": "ascension",
-      "status": "formula-only",
-      "covered": "prestige cube-root and thresholds",
-      "pending": "reset transaction, chip awards, retained state, challenge modes"
+      "status": "partial",
+      "covered": "normal-mode chip delta transaction, reset/rebirth, preserved achievements/heaven, 5 permanent slots",
+      "pending": "challenge modes, all-system retained/reset state, full ascension achievements"
     },
     {
       "id": "heavenly-tree",
-      "status": "unimplemented",
-      "covered": "declaration locations only",
-      "pending": "129 individual nodes, parent edges, costs, unlock logic, permanent slots"
+      "status": "partial",
+      "covered": "129 price/parent nodes; 80 implemented effects; unsupported effects cannot be purchased",
+      "pending": "49 effects and special conditions; some implemented descendants inaccessible behind unsupported parents"
     },
     {
       "id": "sugar-lump",
@@ -84,15 +84,15 @@
     },
     {
       "id": "grandmapocalypse",
-      "status": "unimplemented",
-      "covered": "main.js reference locations",
-      "pending": "research timing, stage changes, pledges, covenant and drop interactions"
+      "status": "partial",
+      "covered": "lab gate, research chain, 30/3-minute timers, stages 1/2/3, grandma effects, pledges/covenant/revoke",
+      "pending": "all related achievements, whole-system frame-order and research-offline parity"
     },
     {
       "id": "wrinkler",
-      "status": "unimplemented",
-      "covered": "main.js reference locations",
-      "pending": "spawn/shiny probabilities, pooled intake and payout, slot caps, aura interactions"
+      "status": "partial",
+      "covered": "stage-based spawn, shiny roll, approach, pooled intake, payout, standard heavenly bonuses",
+      "pending": "dragon/pantheon/garden bonuses, health/poking, rare/seasonal drops and achievements"
     },
     {
       "id": "dragon",
@@ -108,27 +108,27 @@
     },
     {
       "id": "offline",
-      "status": "baseline-only",
-      "covered": "zero earnings before heavenly gate; load excludes buffs; stored durations resume",
-      "pending": "all offline upgrades, optimal/reduced time segments, herald snapshot, minigames and lump offline behavior"
+      "status": "partial",
+      "covered": "heavenly gate, 7 rate/time tiers, optimal/reduced periods, Chimera, buff exclusion, saved timer resume",
+      "pending": "garden/fortune/dragon/herald/minigame/offline side effects; complete pledge parity"
     },
     {
       "id": "save-load",
       "status": "partial",
-      "covered": "versioned own-format JSON, v1 migration, validation, local storage, import/export",
-      "pending": "future state migrations, all-system saves, original save compatibility intentionally absent"
+      "covered": "v3 state with v1/v2 migration; balances preserved; progression, timers, intake, slots, buffs saved and validated",
+      "pending": "future minigames/sugar/dragon/seasons persistence; original format compatibility excluded"
     },
     {
       "id": "verification",
       "status": "partial",
-      "covered": "pinned mirror output fixtures, unit and browser tests",
-      "pending": "official live-version comparison and complete state-space parity"
+      "covered": "49 unit tests, 360 price cases, 24 cursor cases, 24 expanded reference CalculateGains cases, two browser flows under Pages prefix",
+      "pending": "official live-version comparison; complete random/minigame/extreme-state parity"
     },
     {
       "id": "hosting",
-      "status": "local-only",
-      "covered": "static browser app and Node dev server",
-      "pending": "chatgptsites tools unavailable; no public deployment"
+      "status": "github-pages-compatible",
+      "covered": "relative assets, two Pages-prefixed browser flows, reproducible standalone and ZIP",
+      "pending": "Safari real-device and deployed build verification; chatgptsites unavailable"
     }
   ]
 }

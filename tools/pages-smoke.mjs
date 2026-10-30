@@ -3,7 +3,7 @@ import http from 'node:http';
 import {readFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const prefix='/Bisketcliker/';
-const files=new Set(['index.html','src/style.css','src/app.js','src/engine.js','src/data.js','src/spec/core.js']);
+const files=new Set(['index.html','src/style.css','src/app.js','src/engine.js','src/data.js','src/spec/core.js','src/spec/progression.js','src/calculations.js']);
 const requests=[];
 const server=http.createServer(async(req,res)=>{
   const pathname=new URL(req.url,'http://localhost').pathname;
@@ -17,6 +17,7 @@ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 process.env.BASE_URL=`http://127.0.0.1:${server.address().port}${prefix}`;
 try {
   await import('./browser-smoke.mjs');
+  await import('./progression-smoke.mjs');
   assert.ok(requests.includes(prefix+'src/style.css'));
   assert.ok(requests.includes(prefix+'src/app.js'));
   assert.ok(!requests.some(p=>p.startsWith('/src/')));
