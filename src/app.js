@@ -1,10 +1,10 @@
+import { formatNumber as format } from './calculations.js';
 import { facilities, upgrades, achievements, heavenlyUpgrades } from './data.js';
 import { createState, restore, advance, click, buy, sell, cost, cps, cpc, buyUpgrade, productionBreakdown, upgradePrice, ascensionGain, ascend, buyHeaven, canBuyHeaven, reincarnate, assignPermanent, pledge, pledgePrice, toggleCovenant, popParasite, clickGolden, clickStormDrop } from './engine.js';
 const $ = id => document.getElementById(id);
 const key = 'bisket-save-v3';
 let state = createState(), quantity = 1, mode = 'buy', loadFailed = false;
 try { const saved = localStorage.getItem(key) ?? localStorage.getItem('bisket-save-v2') ?? localStorage.getItem('bisket-save-v1'); if (saved) state = restore(saved); } catch { loadFailed = true; $('save-status').textContent = '保存データを読み込めません。自動保存を停止しています'; }
-const format = n => n >= 1e12 ? n.toExponential(3) : n.toLocaleString('ja-JP',{maximumFractionDigits:1});
 $('facilities').innerHTML = facilities.map(f => `<button class="facility" id="buy-${f.id}"><span class="facility-icon">${f.icon}</span><span class="facility-info"><b>${f.name}</b><small>${f.description}</small><span class="price" id="price-${f.id}"></span></span><span class="facility-owned" id="owned-${f.id}"></span></button>`).join('');
 for (const f of facilities) $(`buy-${f.id}`).addEventListener('click', () => { (mode==='buy'?buy:sell)(state,f.id,quantity); render(); });
 function describeUpgrade(u) {
@@ -42,8 +42,8 @@ function render() {
   advance(state);
   for (const id of ['cookies','earned','clicks']) $(id).textContent = format(state[id]);
   $('cps').textContent = format(cps(state));
-  $('owned').textContent = Object.values(state.owned).reduce((a,b)=>a+b,0);
-  for (const f of facilities) { const price = cost(state,f.id,quantity); $(`price-${f.id}`).textContent = mode==='buy'?`● ${format(price)} 枚 / ${quantity}台（予算内まで購入）`:`${quantity}台まで売却`; $(`owned-${f.id}`).textContent = state.owned[f.id]; $(`buy-${f.id}`).disabled = state.inAscension||(mode==='buy'?state.cookies < cost(state,f.id):state.owned[f.id]===0); }
+  $('owned').textContent = format(Object.values(state.owned).reduce((a,b)=>a+b,0));
+  for (const f of facilities) { const price = cost(state,f.id,quantity); $(`price-${f.id}`).textContent = mode==='buy'?`● ${format(price)} 枚 / ${quantity}台（予算内まで購入）`:`${quantity}台まで売却`; $(`owned-${f.id}`).textContent = format(state.owned[f.id]); $(`buy-${f.id}`).disabled = state.inAscension||(mode==='buy'?state.cookies < cost(state,f.id):state.owned[f.id]===0); }
   for(const u of upgrades){const button=$(`upgrade-${u.id}`);button.hidden=!state.unlocked.includes(u.id)||state.upgrades.includes(u.id);button.disabled=state.inAscension||state.cookies<upgradePrice(state,u.id);$(`upgrade-price-${u.id}`).textContent=format(upgradePrice(state,u.id))+' 枚';}
   $('upgrade-empty').hidden=state.unlocked.some(id=>!state.upgrades.includes(id));
   $('buffs').textContent = state.buffs.map(b => `${b.name} ×${b.multiplier} · ${Math.ceil(b.remainingMs/1000)}秒`).join(' / ');

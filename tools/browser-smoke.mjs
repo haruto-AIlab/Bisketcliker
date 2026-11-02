@@ -29,6 +29,18 @@ try {
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.locator('[data-panel="facility-panel"]').click();await page.screenshot({path:'/tmp/bisket-mobile.png',fullPage:true});
   await page.setViewportSize({width:1440,height:1050});await page.screenshot({path:'/tmp/bisket-desktop.png',fullPage:true});
+  // Late-game balances use Japanese units, survive reload, and fit mobile screens.
+  for(const [amount,label] of [[1.25e8,'1.25億'],[1e52,'1恒河沙'],[1e56,'1頻波羅'],[1e68,'1兆頻波羅'],[1e112,'1矜羯羅'],[1e280,'1頻波羅阿伽羅']]){
+    const late=createState(Date.now());late.cookies=amount;late.earned=amount;
+    const lateContext=await browser.newContext({viewport:{width:390,height:844}});
+    await lateContext.addInitScript(s=>{if(!sessionStorage.getItem('late-seeded')){localStorage.setItem('bisket-save-v3',JSON.stringify(s));sessionStorage.setItem('late-seeded','1');}},late);
+    const latePage=await lateContext.newPage();latePage.on('pageerror',e=>errors.push(e.message));
+    await latePage.goto(base);await latePage.waitForFunction(expected=>document.getElementById('cookies').textContent===expected,label);
+    await latePage.locator('#save').click();await latePage.reload();
+    assert.equal(await latePage.locator('#cookies').textContent(),label);
+    assert.ok(await latePage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+    await lateContext.close();
+  }
   assert.deepEqual(errors,[]);
   console.log('PASS: clicks, 20 facilities, unlocks, purchase, sale, records, save/reload, export/import, mobile overflow; no page errors');
 } finally {await browser.close();}
