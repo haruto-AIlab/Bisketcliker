@@ -7,7 +7,7 @@ for(const [file,variable]of [['src/spec/core.js','spec'],['src/spec/progression.
   const raw=await readFile(new URL('../'+file,import.meta.url),'utf8');parts.push(raw.replace('export default ',`const ${variable} = `));
 }
 for(const file of ['calculations.js','data.js','engine.js','app.js']){
-  const raw=await readFile(new URL('../src/'+file,import.meta.url),'utf8');parts.push(raw.replace(/^import[^\n]*\n/gm,'').replace(/\bexport (?=(?:const|let|function|class)\b)/g,''));
+  const raw=await readFile(new URL('../src/'+file,import.meta.url),'utf8');parts.push(raw.replace(/^import[^\n]*\n/gm,line=>[...line.matchAll(/\b(\w+)\s+as\s+(\w+)\b/g)].map(([,original,alias])=>`const ${alias} = ${original};\n`).join('')).replace(/\bexport (?=(?:const|let|function|class)\b)/g,''));
 }
 const script='(()=>{\n'+parts.join('\n')+'\n})();';
 await writeFile('/tmp/bisket-bundle-check.js',script);

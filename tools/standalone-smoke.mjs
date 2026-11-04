@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import { chromium } from 'playwright-core';
+import { fileURLToPath } from 'node:url';
+import http from 'node:http';
+import { readFile } from 'node:fs/promises';
+const target=process.env.STANDALONE_PATH||fileURLToPath(new URL('../downloads/bisket.html',import.meta.url));
+const server=http.createServer(async(req,res)=>{res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});res.end(await readFile(target));});
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+try {
+  const context=await browser.newContext({viewport:{width:390,height:844}});
+  const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  page.setDefaultTimeout(5000);
+  await page.goto(`http://127.0.0.1:${server.address().port}/`);
+  assert.deepEqual(errors,[], 'Standalone game must initialize without script errors');
+  assert.equal(await page.locator('#cookies').textContent(),'1,000');
+  assert.equal(await page.locator('#buy-cursor').isEnabled(),true);
+  await page.locator('#buy-cursor').click();
+  assert.equal(await page.locator('#owned-cursor').textContent(),'1');
+  assert.ok(await page.locator('#price-cursor').textContent());
+  await page.locator('[data-mode="sell"]').click();await page.locator('#buy-cursor').click();
+  assert.equal(await page.locator('#owned-cursor').textContent(),'0');
+  await page.locator('[data-mode="buy"]').click();await page.locator('#buy-cursor').click();
+  await page.locator('#save').click();await page.reload();
+  assert.equal(await page.locator('#owned-cursor').textContent(),'1');
+  await page.locator('[data-quantity="10"]').click();await page.locator('#buy-cursor').click();
+  assert.equal(await page.locator('#owned-cursor').textContent(),'11');
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  assert.deepEqual(errors,[]);
+  console.log('PASS: standalone HTML initializes, purchases, sells, bulk buys, saves/reloads, and fits mobile without script errors');
+} finally {await browser.close();await new Promise(resolve=>server.close(resolve));}

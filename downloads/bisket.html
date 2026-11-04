@@ -331,6 +331,7 @@ function restore(raw,now=Date.now()){
   s.updatedAt=now;reconcile(s);if(![cps(s),cpc(s)].every(Number.isFinite))throw Error('数値が範囲外です');return s;
 }
 
+const format = formatNumber;
 const $ = id => document.getElementById(id);
 const key = 'bisket-save-v3';
 let state = createState(), quantity = 1, mode = 'buy', loadFailed = false;

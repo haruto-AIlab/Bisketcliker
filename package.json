@@ -9,7 +9,8 @@
     "test:pages": "node tools/pages-smoke.mjs",
     "spec:extract": "node tools/extract-spec.mjs",
     "package:downloads": "node tools/package-downloads.mjs",
-    "spec:progression": "node tools/extract-progression.mjs"
+    "spec:progression": "node tools/extract-progression.mjs",
+    "test:standalone": "node tools/standalone-smoke.mjs"
   },
   "engines": {
     "node": ">=22"
